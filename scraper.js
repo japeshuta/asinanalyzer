@@ -636,7 +636,63 @@ function normalizeTitle(title) {
     return (title || '').trim().replace(/\s+/g, ' ').toLowerCase();
 }
 
-// Add new function to scrape store data
+// Add new function to scrape store categories
+async function scrapeStoreCategory(categoryUrl) {
+    try {
+        const storeId = categoryUrl.split('/page/')[1].split('/')[0];
+        const params = {
+            api_key: "939D2F2E4B4746AE8E4B6BC407C14238",
+            amazon_domain: "amazon.com",
+            store_id: storeId,
+            type: "store"
+        };
+
+        const response = await axios.get('https://api.rainforestapi.com/request', { params });
+        return response.data.store_results || [];
+    } catch (error) {
+        console.error(colors.red + `Error scanning category: ${error.message}` + colors.reset);
+        return [];
+    }
+}
+
+// Add function to deduplicate ASINs with logging
+async function deduplicateAsins(asins) {
+    console.log(colors.cyan + `\n🔍 Starting deduplication process...` + colors.reset);
+    console.log(colors.cyan + `Initial count: ${asins.length} ASINs` + colors.reset);
+    
+    // Create frequency map
+    const frequency = asins.reduce((acc, asin) => {
+        acc[asin] = (acc[asin] || 0) + 1;
+        return acc;
+    }, {});
+    
+    // Find duplicates
+    const duplicates = Object.entries(frequency)
+        .filter(([_, count]) => count > 1)
+        .map(([asin, count]) => ({ asin, count }));
+    
+    // Log duplicate information
+    if (duplicates.length > 0) {
+        console.log(colors.yellow + `\nFound duplicates:` + colors.reset);
+        duplicates.forEach(({ asin, count }) => {
+            console.log(colors.yellow + `ASIN ${asin}: appears ${count} times` + colors.reset);
+        });
+    }
+    
+    // Get unique ASINs
+    const uniqueAsins = Object.keys(frequency).sort();
+    
+    // Log statistics
+    const totalDuplicates = asins.length - uniqueAsins.length;
+    console.log(colors.green + `\nDeduplication complete:` + colors.reset);
+    console.log(colors.green + `- Original count: ${asins.length}` + colors.reset);
+    console.log(colors.green + `- Duplicate entries removed: ${totalDuplicates}` + colors.reset);
+    console.log(colors.green + `- Final unique count: ${uniqueAsins.length}` + colors.reset);
+    
+    return uniqueAsins;
+}
+
+// Modified store scanning function
 async function scrapeStore(storeId) {
     const params = {
         api_key: "939D2F2E4B4746AE8E4B6BC407C14238",
@@ -646,17 +702,78 @@ async function scrapeStore(storeId) {
     };
 
     try {
+        console.log(colors.cyan + '🔍 Scanning main store page...' + colors.reset);
         const response = await axios.get('https://api.rainforestapi.com/request', { params });
         
+        // Collect all ASINs from main page and categories
+        let allProducts = [];
+        let categoryCount = 0;
+        let totalCategories = 0;
+
+        // Add main page products
         if (response.data.store_results) {
-            // Extract unique ASINs (some stores may have duplicates)
-            const asins = [...new Set(response.data.store_results.map(item => item.asin))];
-            console.log(colors.cyan + `📊 Found ${asins.length} unique ASINs in store` + colors.reset);
-            return asins.join(',');
+            allProducts = allProducts.concat(
+                response.data.store_results.map(item => item.asin)
+            );
+            console.log(colors.cyan + `Found ${response.data.store_results.length} products on main page` + colors.reset);
+        }
+
+        // Get unique categories (excluding duplicates and special pages)
+        if (response.data.categories) {
+            const uniqueCategories = new Set();
+            response.data.categories.forEach(category => {
+                if (category.link && 
+                    !category.link.includes('/feed') && 
+                    category.name !== 'Home' && 
+                    category.name !== 'Posts') {
+                    uniqueCategories.add(category.link);
+                }
+            });
+
+            totalCategories = uniqueCategories.size;
+            console.log(colors.cyan + `📂 Found ${totalCategories} categories to scan` + colors.reset);
+
+            // Prompt user to continue
+            const continueScanning = await new Promise((resolve) => {
+                rl.question(colors.yellow + `Continue scanning ${totalCategories} categories? (y/n): ` + colors.reset, 
+                    answer => resolve(answer.toLowerCase() === 'y'));
+            });
+
+            if (continueScanning) {
+                // Scan each category
+                for (const categoryUrl of uniqueCategories) {
+                    categoryCount++;
+                    console.log(colors.cyan + `\n📂 Scanning category ${categoryCount}/${totalCategories}...` + colors.reset);
+                    
+                    const categoryProducts = await scrapeStoreCategory(categoryUrl);
+                    allProducts = allProducts.concat(
+                        categoryProducts.map(item => item.asin)
+                    );
+                    
+                    console.log(colors.green + `✅ Category ${categoryCount}/${totalCategories} complete - Found ${categoryProducts.length} products` + colors.reset);
+                    
+                    // Add a small delay between requests
+                    await new Promise(resolve => setTimeout(resolve, 1000));
+                }
+            }
+        }
+
+        // Deduplicate ASINs
+        const uniqueAsins = await deduplicateAsins(allProducts);
+        
+        // Prompt user before proceeding with batch processing
+        const continueBatch = await new Promise((resolve) => {
+            rl.question(colors.yellow + `\nProceed with parent ASIN analysis for ${uniqueAsins.length} products? (y/n): ` + colors.reset, 
+                answer => resolve(answer.toLowerCase() === 'y'));
+        });
+
+        if (continueBatch) {
+            return uniqueAsins.join(',');
         } else {
-            console.log(colors.red + '❌ No results found in store' + colors.reset);
+            console.log(colors.cyan + '⏭️ Skipping batch processing' + colors.reset);
             return '';
         }
+
     } catch (error) {
         console.error(colors.red + 'Error scanning store:', error.message + colors.reset);
         return '';
