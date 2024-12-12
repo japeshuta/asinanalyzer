@@ -3,6 +3,7 @@ const readline = require('readline');
 const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
+const ExcelJS = require('exceljs');
 
 // Add color constants at the top of the file
 const colors = {
@@ -519,30 +520,114 @@ async function analyzeVariantRelationships(initialAsin) {
                    now.getMinutes().toString().padStart(2, '0') + ':' +
                    now.getSeconds().toString().padStart(2, '0');
 
-  const filename = `${timestamp}_${initialAsin}.csv`;
+  const filename = `${timestamp}_${initialAsin}.xlsx`;
 
-  let csvContent = 'ASIN,Parent ASIN,Category,Title,Title Excluding Variant,Relationship';
-  variationTypeArray.forEach(varType => {
-    csvContent += `,${varType}`;
-  });
-  csvContent += '\n';
+  // Convert results to worksheet data
+  const worksheetData = [
+      // Header row
+      ['ASIN', 'Parent ASIN', 'Category', 'Title', 'Title Excluding Variant', 'Relationship', ...variationTypeArray]
+  ];
 
+  // Add data rows
   results.forEach(result => {
-    csvContent += `${result.asin},${result.parentAsin},"${result.category}","${result.title}","${result.title_excluding_variant_name}",${result.type}`;
-    variationTypeArray.forEach(varType => {
-        const value = result.variationValues[varType] || '';
-        csvContent += `,"${value}"`;
-    });
-    csvContent += '\n';
+      const row = [
+          result.asin,
+          result.parentAsin,
+          result.category,
+          result.title,
+          result.title_excluding_variant_name,
+          result.type
+      ];
+      
+      // Add variation values
+      variationTypeArray.forEach(varType => {
+          row.push(result.variationValues[varType] || '');
+      });
+      
+      worksheetData.push(row);
   });
 
   try {
-    await fs.promises.writeFile(filename, csvContent);
-    console.log(`\nCompleted processing all ${totalVariants} variants!`);
-    console.log(`Variant relationship analysis written to ${filename}`);
-    console.log(`Found ${variationTypeArray.length} variation types: ${variationTypeArray.join(', ')}`);
+      // Create workbook and worksheets
+      const workbook = new ExcelJS.Workbook();
+      const variantSheet = workbook.addWorksheet('Variant Analysis');
+      const attributeSheet = workbook.addWorksheet('Attribute Analysis');
+      
+      // First sheet - remains the same
+      worksheetData.forEach(row => {
+          variantSheet.addRow(row);
+      });
+      
+      // Auto-size columns for first sheet
+      variantSheet.columns.forEach((column, index) => {
+          let maxLength = 0;
+          variantSheet.getColumn(index + 1).eachCell({ includeEmpty: true }, cell => {
+              const columnLength = cell.value ? cell.value.toString().length : 0;
+              maxLength = Math.max(maxLength, columnLength);
+          });
+          column.width = Math.min(Math.max(maxLength + 2, 10), 50);
+      });
+
+      // Second sheet - Attribute Analysis
+      // Create headers and collect ASINs for each attribute-value combination
+      const attributeValueColumns = new Map();
+      
+      // First pass: collect all attribute-value combinations and their ASINs
+      results.forEach(result => {
+          variationTypeArray.forEach(varType => {
+              const value = result.variationValues[varType] || '';
+              if (value) {
+                  const columnHeader = `${varType}: ${value}`;
+                  if (!attributeValueColumns.has(columnHeader)) {
+                      attributeValueColumns.set(columnHeader, new Set());
+                  }
+                  attributeValueColumns.get(columnHeader).add(result.asin);
+              }
+          });
+      });
+
+      // Convert to array for easier handling
+      const headers = Array.from(attributeValueColumns.keys());
+      
+      // Add headers to sheet
+      attributeSheet.getRow(1).values = [''].concat(headers);
+
+      // Find the maximum number of ASINs in any column
+      const maxAsins = Math.max(...Array.from(attributeValueColumns.values(), set => set.size));
+
+      // Add ASINs under each column
+      for (let row = 2; row <= maxAsins + 1; row++) {
+          const rowData = [''];  // First column empty
+          headers.forEach(header => {
+              const asins = Array.from(attributeValueColumns.get(header));
+              rowData.push(asins[row - 2] || '');  // Add ASIN or empty string if no more ASINs
+          });
+          attributeSheet.getRow(row).values = rowData;
+      }
+
+      // Auto-size columns for second sheet
+      attributeSheet.columns.forEach((column, index) => {
+          let maxLength = 0;
+          attributeSheet.getColumn(index + 1).eachCell({ includeEmpty: true }, cell => {
+              const columnLength = cell.value ? cell.value.toString().length : 0;
+              maxLength = Math.max(maxLength, columnLength);
+          });
+          column.width = Math.min(Math.max(maxLength + 2, 10), 50);
+      });
+      
+      // Add some basic formatting
+      const headerRow = attributeSheet.getRow(1);
+      headerRow.font = { bold: true };
+      headerRow.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
+      
+      // Save workbook to file
+      await workbook.xlsx.writeFile(filename);
+      
+      console.log(`\nCompleted processing all ${results.length} variants!`);
+      console.log(`Variant relationship analysis written to ${filename}`);
+      console.log(`Found ${variationTypeArray.length} variation types: ${variationTypeArray.join(', ')}`);
   } catch (error) {
-    console.error('Error writing analysis results:', error);
+      console.error('Error writing analysis results:', error);
   }
 }
 
