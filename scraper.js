@@ -287,6 +287,67 @@ async function batchProcessByParent(inputAsins) {
   }
 }
 
+// Add new function for variant relationship analysis
+async function analyzeVariantRelationships(initialAsin) {
+  console.log('Starting variant relationship analysis...');
+  
+  // Store processed ASINs to avoid duplicates
+  const processedAsins = new Set();
+  const results = [];
+  
+  // Process initial ASIN
+  const initialResult = await scrapeAmazon(initialAsin);
+  if (!initialResult || !initialResult.product) {
+    console.log('Could not fetch data for initial ASIN');
+    return;
+  }
+
+  // Process the initial product
+  results.push({
+    asin: initialAsin,
+    parentAsin: initialResult.product.parent_asin,
+    title: initialResult.product.title,
+    type: initialAsin === initialResult.product.parent_asin ? 'PARENT' : 'CHILD'
+  });
+  processedAsins.add(initialAsin);
+
+  // Process all variants
+  if (initialResult.product.variants) {
+    for (const variant of initialResult.product.variants) {
+      if (!processedAsins.has(variant.asin)) {
+        console.log(`Processing variant ASIN: ${variant.asin}...`);
+        const variantResult = await scrapeAmazon(variant.asin);
+        
+        if (variantResult && variantResult.product) {
+          results.push({
+            asin: variant.asin,
+            parentAsin: variantResult.product.parent_asin,
+            title: variantResult.product.title,
+            type: variant.asin === variantResult.product.parent_asin ? 'PARENT' : 'CHILD'
+          });
+        }
+        processedAsins.add(variant.asin);
+      }
+    }
+  }
+
+  // Create CSV output
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+  const filename = `variant_relationships_${initialAsin}_${timestamp}.csv`;
+  
+  let csvContent = 'ASIN,Parent ASIN,Title,Relationship\n';
+  results.forEach(result => {
+    csvContent += `${result.asin},${result.parentAsin},"${result.title}",${result.type}\n`;
+  });
+
+  try {
+    await fs.promises.writeFile(filename, csvContent);
+    console.log(`Variant relationship analysis written to ${filename}`);
+  } catch (error) {
+    console.error('Error writing analysis results:', error);
+  }
+}
+
 // Main execution
 console.log('Amazon Product Scraper');
 console.log('---------------------');
@@ -299,11 +360,12 @@ async function mainLoop() {
     console.log('\nOptions:');
     console.log('1. Batch process multiple ASINs');
     console.log('2. Batch process by parent ASIN');
-    console.log('3. Exit');
+    console.log('3. Analyze variant relationships');
+    console.log('4. Exit');
     console.log('---------------------');
     
     const answer = await new Promise((resolve) => {
-      rl.question('Please select an option (1-3): ', resolve);
+      rl.question('Please select an option (1-4): ', resolve);
     });
 
     switch (answer) {
@@ -324,6 +386,13 @@ async function mainLoop() {
         break;
 
       case '3':
+        const singleAsin = await new Promise((resolve) => {
+          rl.question('Enter single ASIN to analyze: ', resolve);
+        });
+        await analyzeVariantRelationships(singleAsin.trim());
+        break;
+
+      case '4':
         console.log('\nThank you for using the Amazon Product Scraper!');
         db.close();
         rl.close();
