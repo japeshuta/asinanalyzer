@@ -357,7 +357,7 @@ async function analyzeVariantRelationships(initialAsin) {
             });
         }
 
-        parentTitle = parentResult.product.title;
+        parentTitle = normalizeTitle(parentResult.product.title);
         
         results.push({
             asin: parentAsin,
@@ -418,7 +418,12 @@ async function analyzeVariantRelationships(initialAsin) {
         });
     }
 
-    const isDefaultChild = initialResult.product.title === parentTitle;
+    const initialTitle = normalizeTitle(initialResult.product.title);
+    const isDefaultChild = initialTitle === parentTitle;
+    console.log(`Comparing titles for default child check:
+    Parent: "${parentTitle}"
+    Initial: "${initialTitle}"
+    Is Default: ${isDefaultChild}`);
 
     results.push({
         asin: initialAsin,
@@ -461,7 +466,12 @@ async function analyzeVariantRelationships(initialAsin) {
             });
           }
 
-          const isDefaultChild = variantResult.product.title === parentTitle;
+          const variantTitle = normalizeTitle(variantResult.product.title);
+          const isDefaultChild = variantTitle === parentTitle;
+          console.log(`Comparing titles for variant default child check:
+          Parent: "${parentTitle}"
+          Variant: "${variantTitle}"
+          Is Default: ${isDefaultChild}`);
 
           results.push({
             asin: variant.asin,
@@ -480,9 +490,16 @@ async function analyzeVariantRelationships(initialAsin) {
 
   // Create CSV output
   const variationTypeArray = Array.from(variationTypes);
-  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-  const filename = `variant_relationships_${initialAsin}_${timestamp}.csv`;
-  
+  const now = new Date();
+  const timestamp = now.getFullYear().toString().slice(-2) + 
+                   (now.getMonth() + 1).toString().padStart(2, '0') + 
+                   now.getDate().toString().padStart(2, '0') + '_' +
+                   now.getHours().toString().padStart(2, '0') + ':' +
+                   now.getMinutes().toString().padStart(2, '0') + ':' +
+                   now.getSeconds().toString().padStart(2, '0');
+
+  const filename = `${timestamp}_${initialAsin}.csv`;
+
   let csvContent = 'ASIN,Parent ASIN,Title,Title Excluding Variant,Relationship';
   variationTypeArray.forEach(varType => {
     csvContent += `,${varType}`;
@@ -506,6 +523,11 @@ async function analyzeVariantRelationships(initialAsin) {
   } catch (error) {
     console.error('Error writing analysis results:', error);
   }
+}
+
+// Helper function to normalize titles
+function normalizeTitle(title) {
+    return title.trim().replace(/\s+/g, ' ').toLowerCase();
 }
 
 // Main execution
