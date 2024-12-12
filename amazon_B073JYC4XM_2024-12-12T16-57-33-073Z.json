@@ -1,0 +1,1116 @@
+{
+  "request_info": {
+    "success": true,
+    "credits_used": 260250,
+    "credits_used_this_request": 1,
+    "credits_remaining": 739750,
+    "credits_reset_at": "2024-12-29T14:10:23.000Z"
+  },
+  "request_parameters": {
+    "amazon_domain": "amazon.com",
+    "asin": "B073JYC4XM",
+    "type": "product"
+  },
+  "request_metadata": {
+    "created_at": "2024-12-12T16:57:23.358Z",
+    "processed_at": "2024-12-12T16:57:29.622Z",
+    "total_time_taken": 6.26,
+    "amazon_url": "https://www.amazon.com/dp/B073JYC4XM?th=1&psc=1"
+  },
+  "product": {
+    "title": "[Older Version] SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-128G-GN6MA",
+    "search_alias": {
+      "title": "Electronics",
+      "value": "electronics"
+    },
+    "keywords": "[Older,Version],SanDisk,128GB,Ultra,MicroSDXC,UHS-I,Memory,Card,with,Adapter,100MB/s,C10,U1,Full,HD,A1,Micro,SD,Card,SDSQUAR-128G-GN6MA",
+    "keywords_list": [
+      "[Older",
+      "Version]",
+      "SanDisk",
+      "128GB",
+      "Ultra",
+      "MicroSDXC",
+      "UHS-I",
+      "Memory",
+      "Card",
+      "with",
+      "Adapter",
+      "100MB/s",
+      "Full",
+      "Micro",
+      "Card",
+      "SDSQUAR-128G-GN6MA"
+    ],
+    "is_collection": false,
+    "asin": "B073JYC4XM",
+    "link": "https://www.amazon.com/SanDisk-128GB-microSDXC-Memory-Adapter/dp/B073JYC4XM",
+    "brand": "SanDisk",
+    "protection_plans": [
+      {
+        "asin": "B00VF4JT6G",
+        "title": "2-year Photo and Data Recovery Plan",
+        "price": {
+          "symbol": "$",
+          "value": 2.99,
+          "currency": "USD",
+          "raw": "$2.99"
+        }
+      },
+      {
+        "asin": "B011WVM2B0",
+        "title": "3-year Photo and Data Recovery Plan",
+        "price": {
+          "symbol": "$",
+          "value": 3.99,
+          "currency": "USD",
+          "raw": "$3.99"
+        }
+      }
+    ],
+    "sell_on_amazon": false,
+    "proposition_65_warning": false,
+    "has_size_guide": false,
+    "categories": [
+      {
+        "name": "Electronics",
+        "link": "https://www.amazon.com/electronics-store/b/ref=dp_bc_aui_C_1?ie=UTF8&node=172282",
+        "category_id": "172282"
+      },
+      {
+        "name": "Computers & Accessories",
+        "link": "https://www.amazon.com/computer-pc-hardware-accessories-add-ons/b/ref=dp_bc_aui_C_2?ie=UTF8&node=541966",
+        "category_id": "541966"
+      },
+      {
+        "name": "Computer Accessories & Peripherals",
+        "link": "https://www.amazon.com/Computer-Accessories-Supplies/b/ref=dp_bc_aui_C_3?ie=UTF8&node=172456",
+        "category_id": "172456"
+      },
+      {
+        "name": "Memory Cards",
+        "link": "https://www.amazon.com/Memory-Cards-Computer-Add-Ons-Computers/b/ref=dp_bc_aui_C_4?ie=UTF8&node=516866",
+        "category_id": "516866"
+      },
+      {
+        "name": "Micro SD Cards",
+        "link": "https://www.amazon.com/Micro-SD-Memory-Cards/b/ref=dp_bc_aui_C_5?ie=UTF8&node=3015433011",
+        "category_id": "3015433011"
+      }
+    ],
+    "categories_flat": "Electronics > Computers & Accessories > Computer Accessories & Peripherals > Memory Cards > Micro SD Cards",
+    "description": "SanDisk Ultra microSDXC and microSDHC cards are fast for better pictures, app performance, and Full HD video. Ideal for Android smartphones and tablets, these A1-rated cards load apps faster for a better smartphone experience. Available in capacities up to 400GB, you have the capacity to take more pictures and Full HD video and capture life at its fullest. Built to perform in harsh conditions, SanDisk Ultra microSD cards are waterproof, temperature proof, shockproof, and X-ray proof. 1GB=1,000,000,000 bytes. Actual user storage less. (For 64GB-256GB): Up to 100MB/s read speed; write speed lower. (For 16GB-32GB): Up to 98MB/s read speed; write speed lower. Based on internal testing; performance may be lower depending on host device, interface, usage conditions and other factors. 1MB=1,000,000 bytes. (1) Full HD (1920x1080) video support may vary based upon host device, file attributes, and other factors. (2) Card only. (3) Results may vary based on host device, app type and other factors. (4) Download and installation required. (5) Based on 4.1GB transfer of photos (Average file 3.5MB) with USB 3.0 reader. Results may vary based on host device, file attributes and other factors. 6) Approximations; Results and Full HD (1920x1080) video support may vary based on host device, file attributes and other factors.",
+    "a_plus_content": {
+      "has_a_plus_content": true,
+      "has_brand_story": false,
+      "third_party": false
+    },
+    "sub_title": {
+      "text": "Visit the SanDisk Store",
+      "link": "https://www.amazon.com/stores/SanDisk/page/CD971F4B-EE23-4EA1-96E3-567678AC9C0A?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
+    },
+    "marketplace_id": "ATVPDKIKX0DER",
+    "rating": 4.7,
+    "rating_breakdown": {
+      "five_star": {
+        "percentage": 83,
+        "count": 181539
+      },
+      "four_star": {
+        "percentage": 11,
+        "count": 24059
+      },
+      "three_star": {
+        "percentage": 4,
+        "count": 8748
+      },
+      "two_star": {
+        "percentage": 1,
+        "count": 2187
+      },
+      "one_star": {
+        "percentage": 2,
+        "count": 4374
+      }
+    },
+    "ratings_total": 218722,
+    "main_image": {
+      "link": "https://m.media-amazon.com/images/I/51l5HURpwpL.jpg"
+    },
+    "images": [
+      {
+        "link": "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg",
+        "variant": "MAIN"
+      },
+      {
+        "link": "https://m.media-amazon.com/images/I/61c0HMo4mhL._AC_SL1500_.jpg",
+        "variant": "PT01"
+      },
+      {
+        "link": "https://m.media-amazon.com/images/I/61A5yvLX7FL._AC_SL1200_.jpg",
+        "variant": "PT02"
+      },
+      {
+        "link": "https://m.media-amazon.com/images/I/61qghmaHKXL._AC_SL1200_.jpg",
+        "variant": "PT03"
+      },
+      {
+        "link": "https://m.media-amazon.com/images/I/61TALLEpDlL._AC_SL1200_.jpg",
+        "variant": "PT04"
+      }
+    ],
+    "images_count": 5,
+    "images_flat": "https://m.media-amazon.com/images/I/51l5HURpwpL._AC_SL1200_.jpg,https://m.media-amazon.com/images/I/61c0HMo4mhL._AC_SL1500_.jpg,https://m.media-amazon.com/images/I/61A5yvLX7FL._AC_SL1200_.jpg,https://m.media-amazon.com/images/I/61qghmaHKXL._AC_SL1200_.jpg,https://m.media-amazon.com/images/I/61TALLEpDlL._AC_SL1200_.jpg",
+    "videos": [
+      {
+        "duration_seconds": 34,
+        "width": 1920,
+        "height": 1080,
+        "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5c1181fe-7c83-4436-a466-0021e84ef18e/default.jobtemplate.hls.m3u8",
+        "thumbnail": "https://m.media-amazon.com/images/I/51hoTKyxlxL.SX522_.jpg",
+        "is_hero_video": false,
+        "variant": "MAIN",
+        "group_id": "IB_G1",
+        "group_type": "videos_for_this_product",
+        "title": "SanDisk Ultra microSD Memory Card"
+      },
+      {
+        "duration_seconds": 130,
+        "width": 1920,
+        "height": 1080,
+        "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/8136ab6c-39e0-467d-a3ab-12a360443197/default.jobtemplate.hls.m3u8",
+        "thumbnail": "https://m.media-amazon.com/images/I/41Mk1uvyhVL.SX522_.jpg",
+        "is_hero_video": false,
+        "variant": "MAIN",
+        "group_id": "IB_G2",
+        "group_type": "related_videos",
+        "title": " SanDisk 128GB Ultra Plus Micro SDXC UHS-I Card Unboxing"
+      },
+      {
+        "duration_seconds": 81,
+        "width": 1920,
+        "height": 1080,
+        "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a425c4c7-541d-4402-aad6-72a832e98d47/default.jobtemplate.hls.m3u8",
+        "thumbnail": "https://m.media-amazon.com/images/I/51aTW0KrjgL.SX522_.jpg",
+        "is_hero_video": false,
+        "variant": "MAIN",
+        "group_id": "IB_G2",
+        "group_type": "related_videos",
+        "title": "Will it Work With a Nintendo Switch??"
+      },
+      {
+        "duration_seconds": 35,
+        "width": 1920,
+        "height": 1080,
+        "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e980376f-c42c-4b0e-bff9-086d50a31695/default.jobtemplate.hls.m3u8",
+        "thumbnail": "https://m.media-amazon.com/images/I/41AKnW4PBoL.SX522_.jpg",
+        "is_hero_video": false,
+        "variant": "MAIN",
+        "group_id": "IB_G2",
+        "group_type": "related_videos",
+        "title": "The card doesn't corrupt"
+      },
+      {
+        "duration_seconds": 109,
+        "width": 1920,
+        "height": 1080,
+        "link": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/9e5208b4-ed19-43fc-8b60-0302e499e00e/default.jobtemplate.hls.m3u8",
+        "thumbnail": "https://m.media-amazon.com/images/I/B1svx8b87xL.SX522_.png",
+        "is_hero_video": false,
+        "variant": "MAIN",
+        "group_id": "IB_G2",
+        "group_type": "related_videos",
+        "title": "SanDisk Ultra MicroSDXC Card - REVIEW"
+      }
+    ],
+    "videos_count": 5,
+    "videos_flat": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5c1181fe-7c83-4436-a466-0021e84ef18e/default.jobtemplate.hls.m3u8,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/8136ab6c-39e0-467d-a3ab-12a360443197/default.jobtemplate.hls.m3u8,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a425c4c7-541d-4402-aad6-72a832e98d47/default.jobtemplate.hls.m3u8,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e980376f-c42c-4b0e-bff9-086d50a31695/default.jobtemplate.hls.m3u8,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/9e5208b4-ed19-43fc-8b60-0302e499e00e/default.jobtemplate.hls.m3u8",
+    "videos_additional": [
+      {
+        "id": "amzn1.vse.video.0936813e5bf44811b323a36fa48b5230",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "title": "SanDisk all the way",
+        "profile_image_url": "https://m.media-amazon.com/images/S/amazon-avatars-global/9577364f-6a99-4553-a70e-456b3b67648b._CR109%2C0%2C281%2C281_SX460_._SL34_.jpg",
+        "profile_link": "/gp/profile/amzn1.account.AHYTRX25H3ENPHBZ65C7N3NRPH3A",
+        "public_name": "Linkanity",
+        "creator_type": "Customer",
+        "vendor_code": "AOD60",
+        "vendor_name": "Linkanity",
+        "video_image_id": "81xekG6nFGL",
+        "video_image_url": "https://m.media-amazon.com/images/I/81xekG6nFGL._CR2,0,851,480_SR684,386_.png",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/81xekG6nFGL.png",
+        "video_image_width": "854",
+        "video_image_height": "480",
+        "video_image_extension": "png",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/0a6dcde3-8190-4e93-b563-07a03286f1d1/default.jobtemplate.hls.m3u8",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/33f8d6b2-5ab4-4fc9-8f2a-cc0398d5454f/videopreview.jobtemplate.mp4.342X192P_20HZ_350KBPS_VER_1_0.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4",
+        "video_mime_type": "application/x-mpegURL",
+        "duration": "0:16",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/13f04574-7d73-4304-af8f-e6439cf14f85.vtt",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.02e54e2ca11b47c9af18aa37a11c81ed",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "related_products": "B0BFJWCYTL,B07XLGBYM3,B08CLNX58K",
+        "title": "Will it Work With a Nintendo Switch??",
+        "profile_image_url": "https://images-na.ssl-images-amazon.com/images/S/influencer-profile-image-prod/logo/authoralyssaclay_1673545904736_original._FMjpg_._SL34_.jpeg",
+        "profile_link": "/shop/authoralyssaclay",
+        "public_name": "A & J Productions LLC",
+        "creator_type": "Influencer",
+        "vendor_code": "authoralyssaclay:shop",
+        "vendor_name": "A & J Productions LLC",
+        "vendor_tracking_id": "onamzalys0081-20",
+        "video_image_id": "71c6H6H5JkL",
+        "video_image_url": "https://m.media-amazon.com/images/I/71c6H6H5JkL._CR2,0,851,480_SR684,386_.png",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/71c6H6H5JkL.png",
+        "video_image_width": "854",
+        "video_image_height": "480",
+        "video_image_extension": "png",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a425c4c7-541d-4402-aad6-72a832e98d47/default.jobtemplate.hls.m3u8",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/76d950cc-967a-43d9-8611-df39c52e2372/videopreview.jobtemplate.mp4.342X192P_20HZ_350KBPS_VER_1_0.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/76d950cc-967a-43d9-8611-df39c52e2372/f82e7e74-11ef-49be-967e-325ba0277f30/02e54e2ca11b47c9af18aa37a11c81ed_0-100-0-100_gandalf_preview.m3u8,gandalf,application/x-mpegURL",
+        "video_mime_type": "application/x-mpegURL",
+        "duration": "1:21",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/24019e63-b842-4b10-a622-a7af05a8bc1e.vtt",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.0213202483b04138926ee88d1588021d",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "title": "The card doesn't corrupt",
+        "profile_image_url": "https://m.media-amazon.com/images/I/D15kU0DGAzL._CR1555,295,2357,2356_._FMjpg_._SL34_.jpg",
+        "profile_link": "/shop/kpboix99",
+        "public_name": "Joe",
+        "creator_type": "Influencer",
+        "vendor_code": "kpboix99:shop",
+        "vendor_name": "Joe",
+        "vendor_tracking_id": "onamzjunim-20",
+        "video_image_id": "81W-edQXWEL",
+        "video_image_url": "https://m.media-amazon.com/images/I/81W-edQXWEL._CR2,0,851,480_SR684,386_.png",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/81W-edQXWEL.png",
+        "video_image_width": "854",
+        "video_image_height": "480",
+        "video_image_extension": "png",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/e980376f-c42c-4b0e-bff9-086d50a31695/default.jobtemplate.hls.m3u8",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/fe491bdd-07ce-4dbf-ad88-0d91f84f4999/videopreview.jobtemplate.mp4.default.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/fe491bdd-07ce-4dbf-ad88-0d91f84f4999/videopreview.jobtemplate.mp4.default.mp4,default,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/fe491bdd-07ce-4dbf-ad88-0d91f84f4999/141f06e9-05c5-4372-a538-9757693d2c7d/0213202483b04138926ee88d1588021d_0-100-0-100_gandalf_preview.m3u8,gandalf,application/x-mpegURL",
+        "video_mime_type": "application/x-mpegURL",
+        "duration": "0:35",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/69a547c7-41c8-4b0e-9a1a-74d76381f71d.vtt",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.765f9cbc6f9c451d9c655c108c68c3b6",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "title": "Works fine for my fire 10.....",
+        "profile_image_url": "https://m.media-amazon.com/images/S/amazon-avatars-global/b7541eec-2855-48d1-b56f-efbaa4fb50ce._CR0%2C0%2C406%2C406_UX460_._SL34_.jpg",
+        "profile_link": "/gp/profile/amzn1.account.AHEFBJSTUBLB4ACJSQX5PUNBZPVQ",
+        "public_name": "PD Rubi",
+        "creator_type": "Customer",
+        "vendor_code": "AOD60",
+        "vendor_name": "PD Rubi",
+        "video_image_id": "7175LQGdrkL",
+        "video_image_url": "https://m.media-amazon.com/images/I/7175LQGdrkL._CR0,0,270,152_SR342,193_.png",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/7175LQGdrkL.png",
+        "video_image_width": "270",
+        "video_image_height": "480",
+        "video_image_extension": "png",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/b93c11e1-7255-5570-bbd1-ef26768ddcb3/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a16723b8-fdc9-4d13-a1a0-50f022fdb573/videopreview.jobtemplate.mp4.default.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a16723b8-fdc9-4d13-a1a0-50f022fdb573/videopreview.jobtemplate.mp4.default.mp4,default,video/mp4",
+        "video_mime_type": "video/mp4",
+        "duration": "2:43",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/4c1bc796-0cb0-4b59-b758-f83c8edb2ab1.vtt",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.0c83023a3adf44349ce7ef15c22bdd20",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "title": " SanDisk 128GB Ultra Plus Micro SDXC UHS-I Card Unboxing",
+        "profile_image_url": "https://m.media-amazon.com/images/I/71bNB4r8G5L._CR0,0,939,939_._FMjpg_._SL34_.jpg",
+        "profile_link": "/shop/influencer-796d2bba",
+        "public_name": "BLACK REVIEWS",
+        "creator_type": "Influencer",
+        "vendor_code": "influencer-796d2bba:shop",
+        "vendor_name": "BLACK REVIEWS",
+        "vendor_tracking_id": "onamzjackismo-20",
+        "video_image_id": "41Mk1uvyhVL",
+        "video_image_url": "https://m.media-amazon.com/images/I/41Mk1uvyhVL._CR1,0,638,360_SR342,193_.jpg",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/41Mk1uvyhVL.jpg",
+        "video_image_width": "640",
+        "video_image_height": "360",
+        "video_image_extension": "jpg",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/8136ab6c-39e0-467d-a3ab-12a360443197/default.jobtemplate.hls.m3u8",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a1ae5018-7dcb-49b7-860f-ded3561c08c1/videopreview.jobtemplate.mp4.default.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a1ae5018-7dcb-49b7-860f-ded3561c08c1/videopreview.jobtemplate.mp4.default.mp4,default,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/a1ae5018-7dcb-49b7-860f-ded3561c08c1/6a975ff3-2fbc-4aba-b937-d9435affeb35/0c83023a3adf44349ce7ef15c22bdd20_0-100-0-100_gandalf_preview.m3u8,gandalf,application/x-mpegURL",
+        "video_mime_type": "application/x-mpegURL",
+        "duration": "2:10",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/2fe53cab-12b1-4ddc-82a7-a7bfbcaf75a6.vtt",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.0e0226f4f4cc40a1858bd9c6196f364f",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "title": "I hope I don’t break it!",
+        "profile_image_url": "https://m.media-amazon.com/images/S/amazon-avatars-global/default._SL34_.png",
+        "profile_link": "/gp/profile/amzn1.account.AGEFKYA3ODAQVKMTESXS6QWYVZRA",
+        "public_name": "John Flynn",
+        "creator_type": "Customer",
+        "vendor_code": "UGCPR",
+        "vendor_name": "John Flynn",
+        "video_image_id": "B1p02KONkbS",
+        "video_image_url": "https://m.media-amazon.com/images/I/B1p02KONkbS._CR3,0,1914,1080_SR684,386_.png",
+        "video_image_url_unchanged": "https://images-na.ssl-images-amazon.com/images/I/B1p02KONkbS.png",
+        "video_image_width": "1920",
+        "video_image_height": "1080",
+        "video_image_extension": "png",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/f662f612-c8c9-5e2a-8948-d5731af132e0/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/570f9c69-8414-4351-bc16-9c417bf52730/videopreview.jobtemplate.mp4.default.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/570f9c69-8414-4351-bc16-9c417bf52730/videopreview.jobtemplate.mp4.default.mp4,default,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/570f9c69-8414-4351-bc16-9c417bf52730/5c5ecda0-b61c-4477-9bd8-54f3c7449a77/0e0226f4f4cc40a1858bd9c6196f364f_0-100-0-100_gandalf_preview.m3u8,gandalf,application/x-mpegURL",
+        "video_mime_type": "video/mp4",
+        "duration": "0:16",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/625326c1-9a12-4d58-b6c1-00fd87c43f2f.vtt",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.04a2995e89e54b1ba47c781ae5b2f52b",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "related_products": "B08GYKNCCP,B08CLNX58K,B08KB38516",
+        "title": "SanDisk Ultra MicroSDXC Card - REVIEW",
+        "profile_image_url": "https://m.media-amazon.com/images/I/41j8ZtTUa6L._CR0,0,500,500_._FMjpg_._SL34_.jpg",
+        "profile_link": "/shop/evolvingrealest",
+        "public_name": "See it. Buy it. Love it!",
+        "creator_type": "Influencer",
+        "vendor_code": "evolvingrealest:shop",
+        "vendor_name": "See it. Buy it. Love it!",
+        "vendor_tracking_id": "kjvilleneuve-20",
+        "video_image_id": "B1svx8b87xL",
+        "video_image_url": "https://m.media-amazon.com/images/I/B1svx8b87xL._CR3,0,1914,1080_SR684,386_.png",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/B1svx8b87xL.png",
+        "video_image_width": "1920",
+        "video_image_height": "1080",
+        "video_image_extension": "png",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/9e5208b4-ed19-43fc-8b60-0302e499e00e/default.jobtemplate.hls.m3u8",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/26722837-852c-407a-a758-d22447285fba/videopreview.jobtemplate.mp4.342X192P_20HZ_350KBPS_VER_1_0.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/26722837-852c-407a-a758-d22447285fba/d3595122-1b49-4c9a-b2de-b28bd11e3597/04a2995e89e54b1ba47c781ae5b2f52b_0-100-0-100_gandalf_preview.m3u8,gandalf,application/x-mpegURL",
+        "video_mime_type": "application/x-mpegURL",
+        "duration": "1:49",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/75d1ac13-ed83-4013-abbf-ef3a135a5c66.vtt",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.2312f27daa0b46d183174de58725bb2c",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "related_products": "B073K14CVB,B073JWXGNT,B073JYVKNX,B073JY5T7T,B0758NHWS8",
+        "title": "SanDisk Ultra microSD Memory Card",
+        "public_name": "Western Digital Technologies Inc.",
+        "creator_type": "Vendor",
+        "vendor_code": "137GO",
+        "vendor_name": "Western Digital Technologies Inc.",
+        "video_image_id": "81rZYnvBFGL",
+        "video_image_url": "https://m.media-amazon.com/images/I/81rZYnvBFGL._CR2,0,851,480_SR684,386_.png",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/81rZYnvBFGL.png",
+        "video_image_width": "854",
+        "video_image_height": "480",
+        "video_image_extension": "png",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/5c1181fe-7c83-4436-a466-0021e84ef18e/default.jobtemplate.hls.m3u8",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/46a30926-3874-497c-b8e2-22b3f1203543/videopreview.jobtemplate.mp4.342X192P_20HZ_350KBPS_VER_1_0.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/46a30926-3874-497c-b8e2-22b3f1203543/0fc4d485-b654-4733-a31e-5952cc1585dd/2312f27daa0b46d183174de58725bb2c_0-100-0-100_gandalf_preview.m3u8,gandalf,application/x-mpegURL",
+        "video_mime_type": "application/x-mpegURL",
+        "duration": "0:34",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/e67ce836-dd1d-4fe1-b283-b39f3d72b88c.vtt",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.ef8241e93d1f46a4a7521bfe7550d13b",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "title": "Where is my memory card ",
+        "profile_image_url": "https://m.media-amazon.com/images/S/amazon-avatars-global/default._SL34_.png",
+        "profile_link": "/gp/profile/amzn1.account.AGCQQWEMNCYQSRFRQMLV7PVFF7CA",
+        "public_name": "Felipe Garcia",
+        "creator_type": "Customer",
+        "vendor_code": "UGCPR",
+        "vendor_name": "Felipe Garcia",
+        "video_image_id": "218YWrtt8TL",
+        "video_image_url": "https://m.media-amazon.com/images/I/218YWrtt8TL._CR0,0,360,203_SR342,193_.jpg",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/218YWrtt8TL.jpg",
+        "video_image_width": "360",
+        "video_image_height": "480",
+        "video_image_extension": "jpg",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/695f9b18-7476-475e-aa51-9721d9ecb7eb/default.jobtemplate.hls.m3u8",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/0facb1a2-3b70-455f-9a90-11f7f6ac4312/videopreview.jobtemplate.mp4.default.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4,https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/0facb1a2-3b70-455f-9a90-11f7f6ac4312/videopreview.jobtemplate.mp4.default.mp4,default,video/mp4",
+        "video_mime_type": "application/x-mpegURL",
+        "duration": "0:12",
+        "type": "videos_for_related_products"
+      },
+      {
+        "id": "amzn1.vse.video.06255fa3ee364e95ba2374651c52c0e8",
+        "product_asin": "B073JYC4XM",
+        "parent_asin": "B073JYC4XM",
+        "title": "Original Confirmed with Test! Works Great.",
+        "profile_image_url": "https://m.media-amazon.com/images/S/amazon-avatars-global/default._SL34_.png",
+        "profile_link": "/gp/profile/amzn1.account.AESOXOYUNC64XDU2Y42X2D4UEBHA",
+        "public_name": "Satyam",
+        "creator_type": "Customer",
+        "vendor_code": "AOD60",
+        "vendor_name": "Satyam",
+        "video_image_id": "81EVFiqGFWL",
+        "video_image_url": "https://m.media-amazon.com/images/I/81EVFiqGFWL._CR2,0,851,480_SR684,386_.png",
+        "video_image_url_unchanged": "https://m.media-amazon.com/images/I/81EVFiqGFWL.png",
+        "video_image_width": "854",
+        "video_image_height": "480",
+        "video_image_extension": "png",
+        "video_url": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/v2/a2b8ca70-384b-50b3-9eae-3b58c127a4f8/ShortForm-Generic-480p-16-9-1409173089793-rpcbe5.mp4",
+        "video_previews": "https://m.media-amazon.com/images/S/vse-vms-transcoding-artifact-us-east-1-prod/940ae12f-96c5-4f6b-a00f-80c4139309e2/videopreview.jobtemplate.mp4.342X192P_20HZ_350KBPS_VER_1_0.mp4,342X192P_20HZ_350KBPS_VER_1_0,video/mp4",
+        "video_mime_type": "video/mp4",
+        "duration": "0:30",
+        "closed_captions": "en,https://m.media-amazon.com/images/S/vse-vms-closed-captions-artifact-us-east-1-prod/closedCaptions/d97b1db0-f476-47a8-b7d1-96fc93c2071b.vtt",
+        "type": "videos_for_related_products"
+      }
+    ],
+    "has_360_view": false,
+    "is_bundle": false,
+    "feature_bullets": [
+      "Ideal for Android Smartphones and Tablets. Certified to work with Chromebooks. (This product has been certified to meet Google’s compatibility standards. Chromebook and the “Works with Chromebook” badge are trademarks of Google LLC.)",
+      "Capacities up to 512GB (1GB=1,000,000,000 bytes. Actual user storage less) to store even more hours of Full HD video (Approximations; results and Full HD (1920x1080) video support may vary based on host device, file attributes and other factors.)",
+      "Up to 100MB/s transfer read speed (Based on internal testing; Performance may be lower depending on host device, interface, usage conditions and other factors.) lets you move up to 1000 photos in a minute (Based on 4.1GB transfer of photos (Average file 3.5MB) with USB 3.0 reader. Results may vary based on host device, file attributes and other factors.)",
+      "Load apps faster with A1-rated performance (A1 performance is 1500 read IOPS, 500 write IOPS. Based on internal testing. Results may vary based on host device, app type and other factors.)",
+      "Class 10 for Full HD video recording and playback (Full HD (1920x1080) video support may vary based upon host device, file attributes, and other factors.)",
+      "SanDisk Memory Zone app for easy file management (Download and Installation Required)",
+      "Order with your Alexa enabled device. Just ask \"Alexa, order SanDisk microSD.\""
+    ],
+    "feature_bullets_count": 7,
+    "feature_bullets_flat": "Order with your Alexa enabled device. Just ask \"Alexa, order SanDisk microSD.\". SanDisk Memory Zone app for easy file management (Download and Installation Required). Class 10 for Full HD video recording and playback (Full HD (1920x1080) video support may vary based upon host device, file attributes, and other factors.). Load apps faster with A1-rated performance (A1 performance is 1500 read IOPS, 500 write IOPS. Based on internal testing. Results may vary based on host device, app type and other factors.). Up to 100MB/s transfer read speed (Based on internal testing; Performance may be lower depending on host device, interface, usage conditions and other factors.) lets you move up to 1000 photos in a minute (Based on 4.1GB transfer of photos (Average file 3.5MB) with USB 3.0 reader. Results may vary based on host device, file attributes and other factors.). Capacities up to 512GB (1GB=1,000,000,000 bytes. Actual user storage less) to store even more hours of Full HD video (Approximations; results and Full HD (1920x1080) video support may vary based on host device, file attributes and other factors.). Ideal for Android Smartphones and Tablets. Certified to work with Chromebooks. (This product has been certified to meet Google’s compatibility standards. Chromebook and the “Works with Chromebook” badge are trademarks of Google LLC.).",
+    "attributes": [
+      {
+        "name": "Brand",
+        "value": "SanDisk"
+      },
+      {
+        "name": "Model Name",
+        "value": "SanDisk Ultra 128GB microSDXC UHS-I card with Adapter - SDSQUAR-128G-GN6MA"
+      },
+      {
+        "name": "Flash Memory Type",
+        "value": "Micro SD"
+      },
+      {
+        "name": "Memory Storage Capacity",
+        "value": "128 GB"
+      },
+      {
+        "name": "Compatible Devices",
+        "value": "Tablet, Smartphone"
+      }
+    ],
+    "top_reviews": [
+      {
+        "id": "R1J0D2G62ZRN3O",
+        "title": "Never failed me",
+        "body": "SanDisk has proved me on how durable and well made it is. This SanDisk never gave me difficulties, always kept the files I would put on it. One of the best, if not the best memory ry card out there. Read more",
+        "asin": "B073JYC4XM",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>SanDisk has proved me on how durable and well made it is.<br>This SanDisk never gave me difficulties, always kept the files I would put on it. One of the best, if not the best memory ry card out there.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "link": "https://www.amazon.com/gp/customer-reviews/R1J0D2G62ZRN3O/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B073JYC4XM",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the United States on November 11, 2024",
+          "utc": "2024-11-11T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Stanthos",
+          "link": "https://www.amazon.com/gp/profile/amzn1.account.AHAAQ7WS3QPB5KYZF5JJVC4V4X4A/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+          "id": "AHAAQ7WS3QPB5KYZF5JJVC4V4X4A",
+          "image": "https://m.media-amazon.com/images/S/amazon-avatars-global/866dfd01-7993-4f86-9883-986a29a229e4._CR0%2C0%2C869%2C869_SX460_.jpg"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": false
+      },
+      {
+        "id": "R3NQV8GRG9AWVM",
+        "title": "Worked perfectly in my testing and in my tablets!",
+        "body": "I got this 128 GIG card to use with my tablets. So far it has worked perfectly in my testing. I always keep a couple of spares around for my future buys and I seem to give a lot of my SD cards away to family and friends. I picked up this 128 GIG at a great price and I just couldn’t pass it up.  I own about 100 SD cards and I always do a speed test to verify the reading and writing speeds before I install the memory. This card checked out extremely well. The fastest write speed on this card was 73.143 MB/Sec and the fastest reading speed was 93.368 MB/Sec. I have attached the graphical test data for your information. I used a USB 3.0 port with a USB 3.0 card reader for the test.  Overall, this card worked well and I rated it five stars. If I have any future issues I will update my review.  I hope my review and photo of the test data helps you.  Out of 100 plus SD cards I have purchased from Sandisk I have only had one fail. With Sandisk’s 10 year warranty they replaced it and sent me a new one at no charge. That is the advantage when you purchase high tech from a top company that stands behind their product.  I simply called them and returned the old chip and they sent me a new one.  I am amazed at how well these work and how low the price has gotten on a sale day. Putting one of these into your phone or tablet is a wonderful upgrade to the device’s storage capability.  Almost no one needs a 128 GIG chip but at sales prices you can’t pass up getting them.  This is a great product and it makes your smart devices even more powerful.  This is a simple and easy upgrade for your smart devices. Read more",
+        "asin": "B073JYC4XM",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I got this 128 GIG card to use with my tablets. So far it has worked perfectly in my testing. I always keep a couple of spares around for my future buys and I seem to give a lot of my SD cards away to family and friends. I picked up this 128 GIG at a great price and I just couldn’t pass it up.<br><br>I own about 100 SD cards and I always do a speed test to verify the reading and writing speeds before I install the memory. This card checked out extremely well. The fastest write speed on this card was 73.143 MB/Sec and the fastest reading speed was 93.368 MB/Sec. I have attached the graphical test data for your information. I used a USB 3.0 port with a USB 3.0 card reader for the test.<br><br>Overall, this card worked well and I rated it five stars. If I have any future issues I will update my review.<br><br>I hope my review and photo of the test data helps you.<br><br>Out of 100 plus SD cards I have purchased from Sandisk I have only had one fail. With Sandisk’s 10 year warranty they replaced it and sent me a new one at no charge. That is the advantage when you purchase high tech from a top company that stands behind their product.<br><br>I simply called them and returned the old chip and they sent me a new one.<br><br>I am amazed at how well these work and how low the price has gotten on a sale day. Putting one of these into your phone or tablet is a wonderful upgrade to the device’s storage capability.<br><br>Almost no one needs a 128 GIG chip but at sales prices you can’t pass up getting them.<br><br>This is a great product and it makes your smart devices even more powerful.<br><br>This is a simple and easy upgrade for your smart devices.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "link": "https://www.amazon.com/gp/customer-reviews/R3NQV8GRG9AWVM/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B073JYC4XM",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the United States on December 17, 2017",
+          "utc": "2017-12-17T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "JJCEO",
+          "link": "https://www.amazon.com/gp/profile/amzn1.account.AFDRVO62RWOQH7TDI5ZXBLINZGUA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+          "id": "AFDRVO62RWOQH7TDI5ZXBLINZGUA",
+          "image": "https://m.media-amazon.com/images/S/amazon-avatars-global/d89cfec3-f960-4b4a-bec4-678bf66eb03a._CR0%2C0%2C332%2C332_UX460_.jpg"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "images": [
+          {
+            "link": "https://images-na.ssl-images-amazon.com/images/G/01/x-locale/common/grey-pixel.gif"
+          }
+        ],
+        "helpful_votes": 728,
+        "review_country": "us",
+        "is_global_review": false
+      },
+      {
+        "id": "R39VNO5WE69KAG",
+        "title": "Needed for Switch",
+        "body": "Bought this to extend my switches storage. Works perfectly for that, I have had it for years without issues. Read more",
+        "asin": "B073JYC4XM",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Bought this to extend my switches storage. Works perfectly for that, I have had it for years without issues.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "link": "https://www.amazon.com/gp/customer-reviews/R39VNO5WE69KAG/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B073JYC4XM",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the United States on October 17, 2024",
+          "utc": "2024-10-17T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Always",
+          "link": "https://www.amazon.com/gp/profile/amzn1.account.AGZ2G4THDHAWAKUYVQQ46UBD24KA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+          "id": "AGZ2G4THDHAWAKUYVQQ46UBD24KA",
+          "image": "https://m.media-amazon.com/images/S/amazon-avatars-global/b6651618-88f9-4911-ab5f-3f5e30f4aee0._CR109%2C0%2C281%2C281_SX460_.jpg"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": false
+      },
+      {
+        "id": "R2PVZ18BJDE9JC",
+        "title": "At these prices, get the 128!",
+        "body": "- I have tried so many different SD cards from various manufacturers, at various price points, in the name of trying to save a few bucks. It was really important to me back when a 128GB card cost $50 or more. They all do the same thing, so what’s the difference, really? What I've found is that it can be extremely aggravating to put up with when the card does not perform well or does not perform at all. I have heard warning stories about cards that are advertised as one size and actually are another size, causing data loss. With that in mind, I have never tried using the very cheapest card or too-goo-to-be-true card deals. But I have purchased cards on sale at the drugstore or even tried some strange brands. What I have come back to is that it’s just not worth the trouble now that prices have dropped so low. When I am trusting 128 GB of data to a single card, it’s just not worth my time and aggravation to have a card that won’t perform. Furthermore, SanDisk cards like this one are all FAST ENOUGH. I’m not a pro photographer, and I don’t have time to figure out whether a card is Class 1 or Class 3 or whatever. I just want it to be good enough that it can keep up with my devices.  I have now purchased several SanDisk cards, and each and everyone of them has arrived in perfect condition and works perfectly every time. They are faster than any other card that I use and I've never suffered data loss. I am putting this card into my Fiio X5ii Digital Audio Player, and it works just fine. During the initial data transfer I have already noticed that the speed is adequate, and I never experience skipping when playing uncompressed high-resolution audio files. I have the same card for my Nintendo Switch, and it works perfectly.  The prices on these are so good now you have no excuse but to buy good name brand like SanDisk. Just buy it and don't worry about it. Read more",
+        "asin": "B073JYC4XM",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>- I have tried so many different SD cards from various manufacturers, at various price points, in the name of trying to save a few bucks. It was really important to me back when a 128GB card cost $50 or more. They all do the same thing, so what’s the difference, really?<br>What I've found is that it can be extremely aggravating to put up with when the card does not perform well or does not perform at all. I have heard warning stories about cards that are advertised as one size and actually are another size, causing data loss. With that in mind, I have never tried using the very cheapest card or too-goo-to-be-true card deals. But I have purchased cards on sale at the drugstore or even tried some strange brands. What I have come back to is that it’s just not worth the trouble now that prices have dropped so low. When I am trusting 128 GB of data to a single card, it’s just not worth my time and aggravation to have a card that won’t perform. Furthermore, SanDisk cards like this one are all FAST ENOUGH. I’m not a pro photographer, and I don’t have time to figure out whether a card is Class 1 or Class 3 or whatever. I just want it to be good enough that it can keep up with my devices.<br><br>I have now purchased several SanDisk cards, and each and everyone of them has arrived in perfect condition and works perfectly every time. They are faster than any other card that I use and I've never suffered data loss. I am putting this card into my Fiio X5ii Digital Audio Player, and it works just fine. During the initial data transfer I have already noticed that the speed is adequate, and I never experience skipping when playing uncompressed high-resolution audio files. I have the same card for my Nintendo Switch, and it works perfectly.<br><br>The prices on these are so good now you have no excuse but to buy good name brand like SanDisk. Just buy it and don't worry about it.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "link": "https://www.amazon.com/gp/customer-reviews/R2PVZ18BJDE9JC/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B073JYC4XM",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the United States on November 2, 2018",
+          "utc": "2018-11-02T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Nathan C. Lee",
+          "link": "https://www.amazon.com/gp/profile/amzn1.account.AEUC7DP2SHPMCDHLQKPDAQVFIA4A/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+          "id": "AEUC7DP2SHPMCDHLQKPDAQVFIA4A",
+          "image": "https://m.media-amazon.com/images/S/amazon-avatars-global/efeebaa8-285c-4bea-848c-f319fc5c7f4f._CR7%2C0%2C485%2C485_SX460_.jpg"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": false
+      },
+      {
+        "id": "R53XW0OYDQGY4",
+        "title": "Good price",
+        "body": "Works as should Read more",
+        "asin": "B073JYC4XM",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Works as should<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "link": "https://www.amazon.com/gp/customer-reviews/R53XW0OYDQGY4/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B073JYC4XM",
+        "rating": 4,
+        "date": {
+          "raw": "Reviewed in the United States on October 6, 2024",
+          "utc": "2024-10-06T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "LC Dog Mom",
+          "link": "https://www.amazon.com/gp/profile/amzn1.account.AFZX7HM2TPFZH3P722VLKWOFA5DA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+          "id": "AFZX7HM2TPFZH3P722VLKWOFA5DA",
+          "image": "https://m.media-amazon.com/images/S/amazon-avatars-global/546ddc2a-ccff-4b5a-bca8-e80d8738a7a4._CR0%2C0%2C500%2C500_SX460_.jpg"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": false
+      },
+      {
+        "id": "R19RWJPJUDYK5A",
+        "title": "Fast enough, reliable and good value.",
+        "body": "I use these in a Raspberry Pi for the OS and storage. I'm running Linux and a website that is a Digital Library. Mostly \"read\" and some writes. They have performed well in harsh conditions (remote areas in Africa) with frequent use. So far 2-3 years seems to be their life span for this application Read more",
+        "asin": "B073JYC4XM",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>I use these in a Raspberry Pi for the OS and storage. I'm running Linux and a website that is a Digital Library. Mostly \"read\" and some writes. They have performed well in harsh conditions (remote areas in Africa) with frequent use. So far 2-3 years seems to be their life span for this application<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "link": "https://www.amazon.com/gp/customer-reviews/R19RWJPJUDYK5A/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B073JYC4XM",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the United States on April 9, 2024",
+          "utc": "2024-04-09T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Manning Sutton",
+          "link": "https://www.amazon.com/gp/profile/amzn1.account.AGD2NK2T2RFXITPVZQBEUAPFGKVQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+          "id": "AGD2NK2T2RFXITPVZQBEUAPFGKVQ"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": false
+      },
+      {
+        "id": "R2P8B5E3Y7YMZO",
+        "title": "Reliable",
+        "body": "Over the years, I used many different brands of memory cards. Some malfunctioned every once a while. I find Sandisk to be the most reliable brand in my own (limited) experinces. Read more",
+        "asin": "B073JYC4XM",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Over the years, I used many different brands of memory cards. Some malfunctioned every once a while. I find Sandisk to be the most reliable brand in my own (limited) experinces.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "link": "https://www.amazon.com/gp/customer-reviews/R2P8B5E3Y7YMZO/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B073JYC4XM",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the United States on November 3, 2024",
+          "utc": "2024-11-03T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "C-J YANG",
+          "link": "https://www.amazon.com/gp/profile/amzn1.account.AFQ67ASEXLSKKKIXBDGLZMWJ3MXQ/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+          "id": "AFQ67ASEXLSKKKIXBDGLZMWJ3MXQ"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": false
+      },
+      {
+        "id": "RYODKC0ARMJKD",
+        "title": "Great product and very helpful seller",
+        "body": "Didn't work at first but thanks to the helpful seller I/we figured out it wasy setting on my phone 😊😜☺️Thank you so much for your help 😀 Read more",
+        "asin": "B073JYC4XM",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>Didn't work at first but thanks to the helpful seller I/we figured out it wasy setting on my phone 😊😜☺️Thank you so much for your help 😀<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "link": "https://www.amazon.com/gp/customer-reviews/RYODKC0ARMJKD/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B073JYC4XM",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the United States on July 1, 2024",
+          "utc": "2024-07-01T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Patches",
+          "link": "https://www.amazon.com/gp/profile/amzn1.account.AHJZAENF5CLNL5KY46SIDXPKW6GA/ref=cm_cr_dp_d_gw_tr?ie=UTF8",
+          "id": "AHJZAENF5CLNL5KY46SIDXPKW6GA",
+          "image": "https://m.media-amazon.com/images/S/amazon-avatars-global/2cf7d118-990e-45f6-93ea-af3649fd2bb0._CR109%2C0%2C281%2C281_SX460_.jpg"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": false
+      },
+      {
+        "id": "R3MPM8JRLOE4LX",
+        "title": "Prima",
+        "body": "Niks mis mee Read more",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">Niks mis mee<br></span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the Netherlands on November 2, 2024",
+          "utc": "2024-11-02T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Thijs Hassing"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": true
+      },
+      {
+        "id": "R2O7Y6KAT65RJM",
+        "title": "Fick vad jag betalade för",
+        "body": "Tyvärr är minnena långsamma, använder min in en pi 4. Read more",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">Tyvärr är minnena långsamma, använder min in en pi 4.<br></span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in Sweden on October 23, 2024",
+          "utc": "2024-10-23T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Henrik Nyberg"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": true
+      },
+      {
+        "id": "R35KSX3Z44R8AC",
+        "title": "Empfehlenswert",
+        "body": "Die SanDisk Ultra 128GB MicroSDXC ist eine hervorragende Speicherkarte! Mit bis zu 100 MB/s Übertragungsgeschwindigkeit lassen sich große Dateien blitzschnell verschieben, und die A1 App-Leistung sorgt für flüssiges Arbeiten auf dem Smartphone oder Tablet. Besonders praktisch ist der mitgelieferte SD-Adapter, der die Karte vielseitig einsetzbar macht, z. B. für Kameras oder Laptops.  Die Klasse 10 und U1 Einstufung garantieren eine zuverlässige Leistung für Fotos, Videos und Apps. Für den Preis bekommt man viel Speicherplatz und eine bewährte Qualität, die ich von SanDisk gewohnt bin. Eine klare Empfehlung für alle, die viel Speicher und hohe Geschwindigkeit brauchen! Read more",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">Die SanDisk Ultra 128GB MicroSDXC ist eine hervorragende Speicherkarte! Mit bis zu 100 MB/s Übertragungsgeschwindigkeit lassen sich große Dateien blitzschnell verschieben, und die A1 App-Leistung sorgt für flüssiges Arbeiten auf dem Smartphone oder Tablet. Besonders praktisch ist der mitgelieferte SD-Adapter, der die Karte vielseitig einsetzbar macht, z. B. für Kameras oder Laptops.<br><br>Die Klasse 10 und U1 Einstufung garantieren eine zuverlässige Leistung für Fotos, Videos und Apps. Für den Preis bekommt man viel Speicherplatz und eine bewährte Qualität, die ich von SanDisk gewohnt bin. Eine klare Empfehlung für alle, die viel Speicher und hohe Geschwindigkeit brauchen!<br></span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in Germany on September 16, 2024",
+          "utc": "2024-09-16T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Tobi"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "de",
+        "is_global_review": true
+      },
+      {
+        "id": "R1OX3V1MKJZ14M",
+        "title": "Fonctionne bien",
+        "body": "Carte memoire de bonne qualite Read more",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">           <span class=\"cr-original-review-content\">Carte memoire de bonne qualite<br></span><span class=\"cr-translated-review-content aok-hidden\"></span>     </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in Belgium on November 29, 2023",
+          "utc": "2023-11-29T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "XA"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": true
+      },
+      {
+        "id": "R1XYF7ZARGDMES",
+        "title": "Fast and Spacious",
+        "body": "It is working perfectly and it is cheap as it is high speed A1. It worked with the raspberry pi 3B+ with no problem. Retropie, rasbian, Kodi and Plex media server all on one card. Notice you must format it to fat32 to work. Read more",
+        "body_html": "<div data-a-expander-name=\"review_text_read_more\" data-a-expander-collapsed-height=\"300\" class=\"a-expander-collapsed-height a-row a-expander-container a-expander-partial-collapse-container\" style=\"max-height:300px\"><div data-hook=\"review-collapsed\" data-expanded=\"false\" class=\"a-expander-content reviewText review-text-content a-expander-partial-collapse-content\">             <span>It is working perfectly and it is cheap as it is high speed A1. It worked with the raspberry pi 3B+ with no problem. Retropie, rasbian, Kodi and Plex media server all on one card. Notice you must format it to fat32 to work.<br></span>   </div><div class=\"a-expander-header a-expander-partial-collapse-header\"><div class=\"a-expander-content-fade\"></div><a href=\"javascript:void(0)\" data-csa-c-func-deps=\"aui-da-a-expander-toggle\" data-csa-c-type=\"widget\" data-csa-interaction-events=\"click\" data-hook=\"expand-collapse-read-more-less\" aria-label=\"Toggle full review text\" aria-expanded=\"false\" role=\"button\" data-action=\"a-expander-toggle\" class=\"a-declarative\" data-a-expander-toggle=\"{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Read more&quot;, &quot;collapse_prompt&quot;:&quot;Read less&quot;}\"><i class=\"a-icon a-icon-extender-expand\"></i><span class=\"a-expander-prompt\">Read more</span></a></div></div>",
+        "rating": 5,
+        "date": {
+          "raw": "Reviewed in the United Arab Emirates on May 5, 2019",
+          "utc": "2019-05-05T00:00:00.000Z"
+        },
+        "profile": {
+          "name": "Khaled"
+        },
+        "vine_program": false,
+        "verified_purchase": true,
+        "review_country": "us",
+        "is_global_review": true
+      }
+    ],
+    "buybox_winner": {
+      "maximum_order_quantity": {
+        "value": 18,
+        "hard_maximum": false
+      },
+      "new_offers_count": 7,
+      "new_offers_from": {
+        "symbol": "$",
+        "value": 13.85,
+        "currency": "USD",
+        "raw": "$13.85"
+      },
+      "is_prime": true,
+      "is_prime_exclusive_deal": false,
+      "is_amazon_fresh": false,
+      "condition": {
+        "is_new": true
+      },
+      "availability": {
+        "type": "in_stock",
+        "raw": "Only 17 left in stock - order soon.",
+        "dispatch_days": 1,
+        "stock_level": 17
+      },
+      "fulfillment": {
+        "type": "2p",
+        "holiday_message": "Arrives before Christmas",
+        "standard_delivery": {
+          "date": "Thursday, December 19",
+          "name": "FREE"
+        },
+        "fastest_delivery": {
+          "date": "Tuesday, December 17",
+          "name": "Or fastest delivery Tuesday, December 17. Order within 2 hrs 17 mins"
+        },
+        "is_sold_by_amazon": false,
+        "is_fulfilled_by_amazon": true,
+        "is_fulfilled_by_third_party": false,
+        "is_sold_by_third_party": true,
+        "third_party_seller": {
+          "name": "First Choice Online",
+          "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A35BKAA6VXTYCT&asin=B073JYC4XM&ref_=dp_merchant_link&isAmazonFulfilled=1",
+          "id": "A35BKAA6VXTYCT"
+        }
+      },
+      "price": {
+        "symbol": "$",
+        "value": 13.85,
+        "currency": "USD",
+        "raw": "$13.85"
+      },
+      "shipping": {
+        "raw": "FREE"
+      }
+    },
+    "specifications": [
+      {
+        "name": "Brand",
+        "value": "SanDisk"
+      },
+      {
+        "name": "Model Name",
+        "value": "SanDisk Ultra 128GB microSDXC UHS-I card with Adapter - SDSQUAR-128G-GN6MA"
+      },
+      {
+        "name": "Flash Memory Type",
+        "value": "Micro SD"
+      },
+      {
+        "name": "Memory Storage Capacity",
+        "value": "128 GB"
+      },
+      {
+        "name": "Compatible Devices",
+        "value": "Tablet, Smartphone"
+      },
+      {
+        "name": "UPC",
+        "value": "619659160395"
+      },
+      {
+        "name": "Global Trade Identification Number",
+        "value": "00880924867213, 00619659160395"
+      },
+      {
+        "name": "Customer Reviews",
+        "value": "4.7    4.7 out of 5 stars         218,722 ratings          4.7 out of 5 stars"
+      },
+      {
+        "name": "Best Sellers Rank",
+        "value": "#188 in Micro SD Memory Cards"
+      },
+      {
+        "name": "ASIN",
+        "value": "B073JYC4XM"
+      },
+      {
+        "name": "Manufacturer",
+        "value": "Western Digital Technologies Inc."
+      },
+      {
+        "name": "Brand Name",
+        "value": "SanDisk"
+      },
+      {
+        "name": "Model Number",
+        "value": "SDSQUAR-128G-GN6MA"
+      },
+      {
+        "name": "Item Weight",
+        "value": "0.01 Pounds"
+      },
+      {
+        "name": "Item Dimensions L x W",
+        "value": "0.03\"L x 0.59\"W"
+      },
+      {
+        "name": "Item Dimensions D x W x H",
+        "value": "1\"D x 3\"W x 8\"H"
+      },
+      {
+        "name": "Color",
+        "value": "Grey,Red, Grey"
+      },
+      {
+        "name": "Warranty Type",
+        "value": "Manufactured warranty"
+      },
+      {
+        "name": "Read Speed",
+        "value": "100 Megabytes Per Second"
+      },
+      {
+        "name": "Media Speed",
+        "value": "40x"
+      },
+      {
+        "name": "Hardware Connectivity",
+        "value": "microSDXC"
+      },
+      {
+        "name": "Secure Digital Association Speed Class",
+        "value": "Class 10"
+      },
+      {
+        "name": "Additional Features",
+        "value": "water_proof, x_ray_proof, temperature_proof, shock_proof"
+      }
+    ],
+    "specifications_flat": "Additional Features: water_proof, x_ray_proof, temperature_proof, shock_proof. Secure Digital Association Speed Class: Class 10. Hardware Connectivity: microSDXC. Media Speed: 40x. Read Speed: 100 Megabytes Per Second. Warranty Type: Manufactured warranty. Color: Grey,Red, Grey. Item Dimensions D x W x H: 1\"D x 3\"W x 8\"H. Item Dimensions L x W: 0.03\"L x 0.59\"W. Item Weight: 0.01 Pounds. Model Number: SDSQUAR-128G-GN6MA. Brand Name: SanDisk. Manufacturer: Western Digital Technologies Inc. ASIN: B073JYC4XM. Best Sellers Rank: #188 in Micro SD Memory Cards. Customer Reviews: 4.7    4.7 out of 5 stars         218,722 ratings          4.7 out of 5 stars. Global Trade Identification Number: 00880924867213, 00619659160395. UPC: 619659160395. Compatible Devices: Tablet, Smartphone. Memory Storage Capacity: 128 GB. Flash Memory Type: Micro SD. Model Name: SanDisk Ultra 128GB microSDXC UHS-I card with Adapter - SDSQUAR-128G-GN6MA. Brand: SanDisk.",
+    "recent_sales": "100+ bought in past month",
+    "bestsellers_rank": [
+      {
+        "category": "Micro SD Memory Cards",
+        "rank": 188,
+        "link": "https://www.amazon.com/gp/bestsellers/pc/3015433011/ref=pd_zg_hrsr_pc"
+      }
+    ],
+    "color": "Grey,Red, Grey",
+    "manufacturer": "Western Digital Technologies Inc.",
+    "weight": "0.01 Pounds",
+    "model_number": "SDSQUAR-128G-GN6MA",
+    "bestsellers_rank_flat": "Category: Micro SD Memory Cards | Rank: 188",
+    "whats_in_the_box": [
+      "SanDisk Ultra microSDXC UHS-I Card",
+      "SD adapter"
+    ]
+  },
+  "brand_store": {
+    "id": "CD971F4B-EE23-4EA1-96E3-567678AC9C0A",
+    "link": "https://www.amazon.com/stores/SanDisk/page/CD971F4B-EE23-4EA1-96E3-567678AC9C0A"
+  },
+  "newer_model": {
+    "title": "SanDisk 128GB Ultra microSDXC UHS-I Memory Card with Adapter - Up to 140MB/s, C10, U1, Full HD, A1, MicroSD Card - SDSQUAB-128G-GN6MA [New Version]",
+    "asin": "B0B7NTY2S6",
+    "link": "https://www.amazon.com/SanDisk-128GB-microSDXC-Memory-Adapter-dp-B0B7NTY2S6/dp/B0B7NTY2S6/ref=dp_ob_image_ce",
+    "image": "https://m.media-amazon.com/images/I/71HMMAm+TlL._SR75,75_.jpg",
+    "rating": 4.5,
+    "ratings_total": 179061,
+    "price": {
+      "symbol": "$",
+      "value": 14.99,
+      "currency": "USD",
+      "raw": "$14.99"
+    }
+  },
+  "frequently_bought_together": {
+    "total_price": {
+      "symbol": "$",
+      "value": 210.04,
+      "currency": "USD",
+      "raw": "$210.04"
+    },
+    "products": [
+      {
+        "asin": "B073JYC4XM",
+        "title": "[Older Version] SanDisk 128GB Ultra MicroSDXC UHS-I Memory Card with Adapter - 100MB/s, C10, U1, Full HD, A1, Micro SD Card - SDSQUAR-128G-GN6MA",
+        "link": "https://www.amazon.com/dp/B073JYC4XM",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/51l5HURpwpL._AC_UL116_SR116,116_.jpg",
+        "price": {
+          "symbol": "$",
+          "value": 13.85,
+          "currency": "USD",
+          "raw": "$13.85"
+        }
+      },
+      {
+        "asin": "B07K114TFB",
+        "title": "Zoom Q2N-4K Handy Video Recorder with XY Microphone",
+        "link": "https://www.amazon.com/dp/B07K114TFB",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/81Y4wqhdrZL._AC_UL116_SR116,116_.jpg",
+        "price": {
+          "symbol": "$",
+          "value": 179.2,
+          "currency": "USD",
+          "raw": "$179.20"
+        }
+      },
+      {
+        "asin": "B07X7V62XL",
+        "title": "Aproca Hard Storage Carrying Travel Case for Zoom Video Recorder (Q2n-4K) (Black-Promotion)",
+        "link": "https://www.amazon.com/dp/B07X7V62XL",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/71yBMZ34O7L._AC_UL116_SR116,116_.jpg",
+        "price": {
+          "symbol": "$",
+          "value": 16.99,
+          "currency": "USD",
+          "raw": "$16.99"
+        }
+      }
+    ]
+  },
+  "similar_to_consider": {
+    "asin": "B08TJRVWV1",
+    "link": "https://www.amazon.com/dp/B08TJRVWV1/ref=vp_d_pb_TIER2_pbxcovv3_lp_B073JYC4XM_pd?_encoding=UTF8&pf_rd_p=06cefaa5-a79e-433d-923a-f4250e24166d&pf_rd_r=5WFTX454SB3KE3B78M7M&pd_rd_wg=LfZ2P&pd_rd_i=B08TJRVWV1&pd_rd_w=yFeS2&content-id=amzn1.sym.06cefaa5-a79e-433d-923a-f4250e24166d&pd_rd_r=3c59748d-eb6f-4607-bf92-3eaeeba11680&psc=1",
+    "title": "Amazon Basics Micro SDXC Memory Card with Full Size Adapter, A2, U3, Read Speed up to 100 MB/s, 128 GB, Black",
+    "rating": 4.5,
+    "ratings_total": 97046,
+    "image": "https://m.media-amazon.com/images/I/61DwejyTGkL._SS100_.jpg",
+    "is_prime": true
+  },
+  "also_bought": [
+    {
+      "title": "SanDisk Ultra 128GB SDXC UHS-I Memory Card up to 80MB/s (SDSDUNC-128G-GN6IN), Black",
+      "asin": "B0143IISD0",
+      "link": "https://www.amazon.com/SanDisk-Memory-Standard-Packaging-SDSDUNC-128G-GN6IN/dp/B0143IISD0/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_1/131-4885371-0898754?pd_rd_w=w7bl7&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=5WFTX454SB3KE3B78M7M&pd_rd_wg=fG0DM&pd_rd_r=bc4ca570-addc-44d2-be5d-6d7a933e7ba3&pd_rd_i=B0143IISD0&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/8194p4lS-3L._AC_UL165_SR165,165_.jpg",
+      "rating": 4.7,
+      "ratings_total": 117921,
+      "price": {
+        "symbol": "$",
+        "value": 17.17,
+        "currency": "USD",
+        "raw": "$17.17"
+      }
+    },
+    {
+      "title": "SanDisk 128GB High Endurance Video MicroSDXC Card with Adapter for Dash Cam and Home Monitoring systems - C10, U3, V30, 4K UH",
+      "asin": "B07NY23WBG",
+      "link": "https://www.amazon.com/SanDisk-Endurance-microSDXC-Adapter-Monitoring/dp/B07NY23WBG/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_2/131-4885371-0898754?pd_rd_w=w7bl7&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=5WFTX454SB3KE3B78M7M&pd_rd_wg=fG0DM&pd_rd_r=bc4ca570-addc-44d2-be5d-6d7a933e7ba3&pd_rd_i=B07NY23WBG&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71Yhk7-bl9L._AC_UL165_SR165,165_.jpg",
+      "rating": 4.7,
+      "ratings_total": 29816,
+      "price": {
+        "symbol": "$",
+        "value": 14.79,
+        "currency": "USD",
+        "raw": "$14.79"
+      }
+    },
+    {
+      "title": "SanDisk Ultra SDSQUNS-128G-GN6MN 128GB 80MB/s UHS-I Class 10 microSDXC Card",
+      "asin": "B07HHD7C7T",
+      "link": "https://www.amazon.com/SanDisk-Ultra-SDSQUNS-128G-GN6MN-128GB-microSDXC/dp/B07HHD7C7T/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_3/131-4885371-0898754?pd_rd_w=w7bl7&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=5WFTX454SB3KE3B78M7M&pd_rd_wg=fG0DM&pd_rd_r=bc4ca570-addc-44d2-be5d-6d7a933e7ba3&pd_rd_i=B07HHD7C7T&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61TabCJgJBL._AC_UL165_SR165,165_.jpg",
+      "rating": 4.7,
+      "ratings_total": 40580,
+      "price": {
+        "symbol": "$",
+        "value": 12.89,
+        "currency": "USD",
+        "raw": "$12.89"
+      }
+    },
+    {
+      "title": "SanDisk 64GB X2 (128GB) MicroSDXC Ultra Uhs-1 Memory Card",
+      "asin": "B07XDCZ9J3",
+      "link": "https://www.amazon.com/SanDisk-128GB-MicroSDXC-Ultra-Memory/dp/B07XDCZ9J3/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_4/131-4885371-0898754?pd_rd_w=w7bl7&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=5WFTX454SB3KE3B78M7M&pd_rd_wg=fG0DM&pd_rd_r=bc4ca570-addc-44d2-be5d-6d7a933e7ba3&pd_rd_i=B07XDCZ9J3&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61eUgiKiEDL._AC_UL165_SR165,165_.jpg",
+      "rating": 4.7,
+      "ratings_total": 11870,
+      "price": {
+        "symbol": "$",
+        "value": 14.35,
+        "currency": "USD",
+        "raw": "$14.35"
+      }
+    },
+    {
+      "title": "SanDisk Mobile Class4 MicroSDHC Flash Memory Card- SDSDQM-B35A with Adapter 16GB",
+      "asin": "B004ZIENBA",
+      "link": "https://www.amazon.com/SanDisk-Mobile-MicroSDHC-SDSDQM-B35A-Adapter/dp/B004ZIENBA/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_5/131-4885371-0898754?pd_rd_w=w7bl7&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=5WFTX454SB3KE3B78M7M&pd_rd_wg=fG0DM&pd_rd_r=bc4ca570-addc-44d2-be5d-6d7a933e7ba3&pd_rd_i=B004ZIENBA&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61CqlNh4BBL._AC_UL165_SR165,165_.jpg",
+      "rating": 4.6,
+      "ratings_total": 23034,
+      "price": {
+        "symbol": "$",
+        "value": 6.08,
+        "currency": "USD",
+        "raw": "$6.08"
+      }
+    },
+    {
+      "title": "SanDisk Ultra 32GB MicroSDHC Class 10 UHS Memory Card Speed Up To 30MB/s With Adapter - SDSDQUA-032G-U46A [Old Version]",
+      "asin": "B007XZM6VG",
+      "link": "https://www.amazon.com/SanDisk-Ultra-MicroSDHC-Memory-Adapter/dp/B007XZM6VG/ref=slsr_d_dpds_fsdp4star_fa_xcat_cheapdynam_d_sccl_2_6/131-4885371-0898754?pd_rd_w=w7bl7&content-id=amzn1.sym.189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_p=189ba0e8-243a-408f-947d-77c5ac846d2e&pf_rd_r=5WFTX454SB3KE3B78M7M&pd_rd_wg=fG0DM&pd_rd_r=bc4ca570-addc-44d2-be5d-6d7a933e7ba3&pd_rd_i=B007XZM6VG&psc=1",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71zPu3DN1wL._AC_UL165_SR165,165_.jpg",
+      "rating": 4.7,
+      "ratings_total": 51586,
+      "price": {
+        "symbol": "$",
+        "value": 7.93,
+        "currency": "USD",
+        "raw": "$7.93"
+      }
+    }
+  ]
+}

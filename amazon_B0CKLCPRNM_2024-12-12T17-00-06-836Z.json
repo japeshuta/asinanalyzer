@@ -1,0 +1,5140 @@
+{
+  "request_info": {
+    "success": true,
+    "credits_used": 260258,
+    "credits_used_this_request": 1,
+    "credits_remaining": 739742,
+    "credits_reset_at": "2024-12-29T14:10:23.000Z"
+  },
+  "request_parameters": {
+    "amazon_domain": "amazon.com",
+    "asin": "B0CKLCPRNM",
+    "type": "product"
+  },
+  "request_metadata": {
+    "created_at": "2024-12-12T16:59:51.848Z",
+    "processed_at": "2024-12-12T16:59:56.531Z",
+    "total_time_taken": 4.68,
+    "amazon_url": "https://www.amazon.com/dp/B0CKLCPRNM?th=1&psc=1"
+  },
+  "product": {
+    "title": "Claddagh Gold 10K and 14K Gold Jewish Star of David Textured Signet Ring Available in Yellow, Rose and White Gold with multiple ring sizes A. 10K Yellow Gold 8",
+    "search_alias": {
+      "title": "All Departments",
+      "value": "aps"
+    },
+    "title_excluding_variant_name": "Claddagh Gold 10K and 14K Gold Jewish Star of David Textured Signet Ring Available in Yellow, Rose and White Gold with multiple ring sizes",
+    "keywords": "Claddagh,Gold,10K,and,14K,Gold,Jewish,Star,of,David,Textured,Signet,Ring,Available,in,Yellow,Rose,and,White,Gold,with,multiple,ring,sizes,A.,10K,Yellow,Gold,8",
+    "keywords_list": [
+      "Claddagh",
+      "Gold",
+      "Gold",
+      "Jewish",
+      "Star",
+      "David",
+      "Textured",
+      "Signet",
+      "Ring",
+      "Available",
+      "Yellow",
+      "Rose",
+      "White",
+      "Gold",
+      "with",
+      "multiple",
+      "ring",
+      "sizes",
+      "Yellow",
+      "Gold"
+    ],
+    "is_collection": false,
+    "asin": "B0CKLCPRNM",
+    "parent_asin": "B0CKLG57H7",
+    "link": "https://www.amazon.com/dp/B0CKLCPRNM??th=1&psc=1",
+    "brand": "Claddagh Gold",
+    "protection_plans": [
+      {
+        "asin": "B0C44YSWDY",
+        "title": "2-Year Protection Plan",
+        "price": {
+          "symbol": "$",
+          "value": 26.99,
+          "currency": "USD",
+          "raw": "$26.99"
+        }
+      },
+      {
+        "asin": "B0C457B2LB",
+        "title": "3-Year Protection Plan",
+        "price": {
+          "symbol": "$",
+          "value": 36.99,
+          "currency": "USD",
+          "raw": "$36.99"
+        }
+      },
+      {
+        "asin": "B07RZ3LSHM",
+        "title": "Asurion Complete Protect: One plan covers all eligible past and future purchases (Renews Monthly Until Cancelled)",
+        "price": {
+          "symbol": "$",
+          "value": 16.99,
+          "currency": "USD",
+          "raw": "$16.99/month"
+        }
+      }
+    ],
+    "sell_on_amazon": false,
+    "variants": [
+      {
+        "asin": "B0CKLDXCTW",
+        "title": "B. 10K White Gold 5.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDXCTW?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCV47X",
+        "title": "A. 10K Yellow Gold 4.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCV47X?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFRSNQ",
+        "title": "B. 14K White Gold 4.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFRSNQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC8M1T",
+        "title": "B. 10K White Gold 15.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC8M1T?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC8M1Z",
+        "title": "C. 10K Rose Gold 7",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC8M1Z?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCZJGJ",
+        "title": "A. 10K Yellow Gold 11",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCZJGJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDW259",
+        "title": "C. 10K Rose Gold 5.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDW259?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBVWJ1",
+        "title": "C. 10K Rose Gold 5.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBVWJ1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCVJCX",
+        "title": "C. 14K Rose Gold 4",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCVJCX?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCNHXB",
+        "title": "A. 10K Yellow Gold 6.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCNHXB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBKG92",
+        "title": "A. 10K Yellow Gold 7.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBKG92?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCL4FC",
+        "title": "C. 10K Rose Gold 8.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCL4FC?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDF153",
+        "title": "B. 10K White Gold 15.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDF153?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPPPM",
+        "title": "A. 14K Yellow Gold 6.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPPPM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC5SH4",
+        "title": "A. 10K Yellow Gold 5.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC5SH4?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF5LGB",
+        "title": "B. 14K White Gold 9.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF5LGB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDBS3S",
+        "title": "B. 10K White Gold 6",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDBS3S?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC1224",
+        "title": "C. 10K Rose Gold 8.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC1224?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF6PLT",
+        "title": "A. 14K Yellow Gold 9.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF6PLT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFPFL5",
+        "title": "A. 14K Yellow Gold 4",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFPFL5?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC121D",
+        "title": "A. 14K Yellow Gold 11",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC121D?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCL4V5",
+        "title": "A. 14K Yellow Gold 12.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCL4V5?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCZJG8",
+        "title": "B. 14K White Gold 9",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCZJG8?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGB6WQ",
+        "title": "C. 14K Rose Gold 7.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGB6WQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDGYCW",
+        "title": "C. 14K Rose Gold 10.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDGYCW?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCQVLB",
+        "title": "B. 10K White Gold 9.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCQVLB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPBH8",
+        "title": "C. 14K Rose Gold 5.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPBH8?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCW6KG",
+        "title": "B. 10K White Gold 12",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCW6KG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKL7MYZ3",
+        "title": "B. 14K White Gold 11.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKL7MYZ3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCZGTV",
+        "title": "C. 14K Rose Gold 5.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCZGTV?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLG7ZNQ",
+        "title": "C. 10K Rose Gold 12.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLG7ZNQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDGLK1",
+        "title": "B. 14K White Gold 6",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDGLK1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD9S1H",
+        "title": "A. 10K Yellow Gold 4.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD9S1H?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD9S1G",
+        "title": "B. 14K White Gold 14.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD9S1G?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLH2FJZ",
+        "title": "C. 10K Rose Gold 5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLH2FJZ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5"
+          }
+        ],
+        "main_image": "https://m.media-amazon.com/images/I/41XzYZZfvPL._AC_.jpg",
+        "images": [
+          {
+            "variant": "MAIN",
+            "link": "https://m.media-amazon.com/images/I/41XzYZZfvPL._AC_.jpg"
+          },
+          {
+            "variant": "PT07",
+            "link": "https://m.media-amazon.com/images/I/81XfXV-Ax-L._AC_SL1500_.jpg"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDQDLS",
+        "title": "C. 14K Rose Gold 4.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDQDLS?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFR9YG",
+        "title": "A. 10K Yellow Gold 8.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFR9YG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKL7GVPH",
+        "title": "A. 14K Yellow Gold 12.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKL7GVPH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCW6KV",
+        "title": "B. 10K White Gold 6.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCW6KV?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLB52SR",
+        "title": "B. 14K White Gold 10.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLB52SR?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDG2WL",
+        "title": "B. 14K White Gold 12.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDG2WL?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC5J66",
+        "title": "C. 14K Rose Gold 14",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC5J66?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCWNK7",
+        "title": "A. 14K Yellow Gold 9.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCWNK7?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF53CK",
+        "title": "B. 14K White Gold 5.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF53CK?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC6RBY",
+        "title": "A. 10K Yellow Gold 10.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC6RBY?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDG4JD",
+        "title": "B. 14K White Gold 5.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDG4JD?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGLF7N",
+        "title": "C. 14K Rose Gold 6.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGLF7N?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDG4JF",
+        "title": "C. 14K Rose Gold 15.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDG4JF?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGBLCB",
+        "title": "C. 10K Rose Gold 8",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGBLCB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLH2FJ1",
+        "title": "C. 14K Rose Gold 8.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLH2FJ1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.75"
+          }
+        ],
+        "main_image": "https://m.media-amazon.com/images/I/41XzYZZfvPL._AC_.jpg",
+        "images": [
+          {
+            "variant": "MAIN",
+            "link": "https://m.media-amazon.com/images/I/41XzYZZfvPL._AC_.jpg"
+          },
+          {
+            "variant": "PT07",
+            "link": "https://m.media-amazon.com/images/I/81XfXV-Ax-L._AC_SL1500_.jpg"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF1V4F",
+        "title": "A. 10K Yellow Gold 9.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF1V4F?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCP4KX",
+        "title": "C. 14K Rose Gold 5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCP4KX?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLH3311",
+        "title": "A. 14K Yellow Gold 10.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLH3311?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.25"
+          }
+        ],
+        "main_image": "https://m.media-amazon.com/images/I/41sKfQ8Te2L._AC_.jpg",
+        "images": [
+          {
+            "variant": "MAIN",
+            "link": "https://m.media-amazon.com/images/I/41sKfQ8Te2L._AC_.jpg"
+          },
+          {
+            "variant": "PT07",
+            "link": "https://m.media-amazon.com/images/I/81XfXV-Ax-L._AC_SL1500_.jpg"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFVP4",
+        "title": "A. 14K Yellow Gold 14.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFVP4?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCMKQV",
+        "title": "B. 14K White Gold 13.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCMKQV?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCQJ3D",
+        "title": "A. 10K Yellow Gold 10.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCQJ3D?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF4KWB",
+        "title": "A. 14K Yellow Gold 15.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF4KWB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFR7K",
+        "title": "B. 14K White Gold 8.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFR7K?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF663M",
+        "title": "A. 10K Yellow Gold 15.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF663M?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFPWHG",
+        "title": "C. 14K Rose Gold 11.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFPWHG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDQMYJ",
+        "title": "C. 14K Rose Gold 12.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDQMYJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCSZY3",
+        "title": "C. 14K Rose Gold 6",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCSZY3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLH2FHB",
+        "title": "A. 10K Yellow Gold 5.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLH2FHB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.25"
+          }
+        ],
+        "main_image": "https://m.media-amazon.com/images/I/41sKfQ8Te2L._AC_.jpg",
+        "images": [
+          {
+            "variant": "MAIN",
+            "link": "https://m.media-amazon.com/images/I/41sKfQ8Te2L._AC_.jpg"
+          },
+          {
+            "variant": "PT07",
+            "link": "https://m.media-amazon.com/images/I/81XfXV-Ax-L._AC_SL1500_.jpg"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBW9WM",
+        "title": "A. 14K Yellow Gold 15.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBW9WM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCP1Q2",
+        "title": "B. 10K White Gold 8.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCP1Q2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCW2MN",
+        "title": "A. 14K Yellow Gold 13.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCW2MN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD1T4N",
+        "title": "C. 10K Rose Gold 15.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD1T4N?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBPNDN",
+        "title": "C. 10K Rose Gold 16",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBPNDN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCGHHG",
+        "title": "B. 10K White Gold 5.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCGHHG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCB7F3",
+        "title": "B. 10K White Gold 13.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCB7F3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBX8RS",
+        "title": "B. 14K White Gold 12",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBX8RS?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCW2MG",
+        "title": "B. 14K White Gold 13.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCW2MG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGLF6Y",
+        "title": "B. 14K White Gold 14.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGLF6Y?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFPXZZ",
+        "title": "B. 14K White Gold 6.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFPXZZ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDBVGB",
+        "title": "C. 10K Rose Gold 11",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDBVGB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCNZFQ",
+        "title": "B. 14K White Gold 16",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCNZFQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDVL7F",
+        "title": "C. 14K Rose Gold 9.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDVL7F?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBX8RW",
+        "title": "B. 14K White Gold 11",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBX8RW?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDBRNQ",
+        "title": "B. 10K White Gold 7",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDBRNQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDG8LT",
+        "title": "B. 14K White Gold 11.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDG8LT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFWZYP",
+        "title": "B. 10K White Gold 8",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFWZYP?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF1BKG",
+        "title": "A. 14K Yellow Gold 7.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF1BKG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDGSQZ",
+        "title": "A. 14K Yellow Gold 14",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDGSQZ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGHY8L",
+        "title": "C. 10K Rose Gold 6.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGHY8L?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCF9NL",
+        "title": "C. 10K Rose Gold 6.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCF9NL?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBW9XF",
+        "title": "C. 14K Rose Gold 12.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBW9XF?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGH2LN",
+        "title": "C. 14K Rose Gold 15.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGH2LN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBKNC8",
+        "title": "C. 10K Rose Gold 11.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBKNC8?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLB8DZ4",
+        "title": "C. 10K Rose Gold 9",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLB8DZ4?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDP1CM",
+        "title": "C. 14K Rose Gold 13.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDP1CM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBV193",
+        "title": "C. 14K Rose Gold 8.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBV193?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCMHV7",
+        "title": "B. 10K White Gold 9.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCMHV7?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDN98P",
+        "title": "B. 14K White Gold 12.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDN98P?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDY8FM",
+        "title": "C. 14K Rose Gold 15",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDY8FM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCLG5S",
+        "title": "B. 14K White Gold 10.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCLG5S?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDGM4Z",
+        "title": "C. 14K Rose Gold 7.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDGM4Z?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFZWKG",
+        "title": "C. 10K Rose Gold 8.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFZWKG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCYCH4",
+        "title": "A. 10K Yellow Gold 4.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCYCH4?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDG8KM",
+        "title": "A. 14K Yellow Gold 10.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDG8KM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF4TFR",
+        "title": "A. 14K Yellow Gold 4.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF4TFR?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCVKQJ",
+        "title": "B. 10K White Gold 15.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCVKQJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBKND8",
+        "title": "B. 14K White Gold 15.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBKND8?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGYZ76",
+        "title": "A. 10K Yellow Gold 11.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGYZ76?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDXNDG",
+        "title": "B. 10K White Gold 7.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDXNDG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF6HYH",
+        "title": "A. 14K Yellow Gold 14.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF6HYH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC6TB2",
+        "title": "C. 14K Rose Gold 14.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC6TB2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDDQ5D",
+        "title": "A. 10K Yellow Gold 6",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDDQ5D?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF5LD2",
+        "title": "C. 14K Rose Gold 14.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF5LD2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDV8C2",
+        "title": "A. 14K Yellow Gold 10",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDV8C2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFN6KD",
+        "title": "B. 14K White Gold 14.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFN6KD?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDYPYL",
+        "title": "C. 10K Rose Gold 14",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDYPYL?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF33V5",
+        "title": "A. 14K Yellow Gold 13.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF33V5?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBP7YZ",
+        "title": "A. 10K Yellow Gold 7",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBP7YZ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCVJR6",
+        "title": "A. 14K Yellow Gold 7.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCVJR6?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCTXBT",
+        "title": "B. 10K White Gold 5.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCTXBT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDZ6BK",
+        "title": "C. 14K Rose Gold 12",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDZ6BK?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFLYJ",
+        "title": "B. 10K White Gold 14.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFLYJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD28N7",
+        "title": "A. 14K Yellow Gold 13.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD28N7?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF8YQX",
+        "title": "C. 14K Rose Gold 13.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF8YQX?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBP7Z2",
+        "title": "B. 10K White Gold 5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBP7Z2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPBD6",
+        "title": "A. 10K Yellow Gold 12.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPBD6?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPWMP",
+        "title": "A. 14K Yellow Gold 8.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPWMP?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDYPY4",
+        "title": "A. 14K Yellow Gold 9",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDYPY4?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF6TN4",
+        "title": "B. 14K White Gold 8",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF6TN4?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCXMB1",
+        "title": "C. 14K Rose Gold 16",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCXMB1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF1X3S",
+        "title": "A. 10K Yellow Gold 13.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF1X3S?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDW22F",
+        "title": "A. 10K Yellow Gold 6.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDW22F?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPRS2",
+        "title": "B. 10K White Gold 14",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPRS2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDZ6B2",
+        "title": "A. 10K Yellow Gold 15.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDZ6B2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDJRHD",
+        "title": "A. 14K Yellow Gold 5.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDJRHD?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD5274",
+        "title": "B. 10K White Gold 12.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD5274?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDYPXJ",
+        "title": "B. 14K White Gold 15",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDYPXJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDLJ1X",
+        "title": "A. 14K Yellow Gold 8",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDLJ1X?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKL7N5DF",
+        "title": "B. 10K White Gold 13.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKL7N5DF?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPWL8",
+        "title": "A. 14K Yellow Gold 5.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPWL8?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCRXH6",
+        "title": "C. 10K Rose Gold 13.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCRXH6?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPWL9",
+        "title": "A. 14K Yellow Gold 7.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPWL9?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCRXGT",
+        "title": "C. 14K Rose Gold 10.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCRXGT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCSCLK",
+        "title": "A. 10K Yellow Gold 5.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCSCLK?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFLXH",
+        "title": "A. 10K Yellow Gold 9.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFLXH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF4TDN",
+        "title": "B. 10K White Gold 11",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF4TDN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPWM1",
+        "title": "C. 14K Rose Gold 6.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPWM1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFLXG",
+        "title": "A. 10K Yellow Gold 8.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFLXG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDWFJ8",
+        "title": "C. 10K Rose Gold 9.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDWFJ8?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCJ9C7",
+        "title": "B. 14K White Gold 14",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCJ9C7?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGKGZF",
+        "title": "A. 14K Yellow Gold 7",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGKGZF?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFNL6Q",
+        "title": "B. 14K White Gold 10",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFNL6Q?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGFPJQ",
+        "title": "A. 10K Yellow Gold 6.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGFPJQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCTXBB",
+        "title": "A. 14K Yellow Gold 8.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCTXBB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDC96C",
+        "title": "B. 10K White Gold 4.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDC96C?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBQ3YF",
+        "title": "C. 14K Rose Gold 8.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBQ3YF?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCT6JF",
+        "title": "B. 10K White Gold 12.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCT6JF?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGYT7Y",
+        "title": "C. 10K Rose Gold 9.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGYT7Y?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBPGBT",
+        "title": "A. 10K Yellow Gold 7.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBPGBT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLH3Y6K",
+        "title": "B. 14K White Gold 15.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLH3Y6K?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.75"
+          }
+        ],
+        "main_image": "https://m.media-amazon.com/images/I/418kVxlzhAL._AC_.jpg",
+        "images": [
+          {
+            "variant": "MAIN",
+            "link": "https://m.media-amazon.com/images/I/418kVxlzhAL._AC_.jpg"
+          },
+          {
+            "variant": "PT07",
+            "link": "https://m.media-amazon.com/images/I/81XfXV-Ax-L._AC_SL1500_.jpg"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF4FV6",
+        "title": "A. 14K Yellow Gold 4.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF4FV6?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCLFR2",
+        "title": "B. 10K White Gold 10.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCLFR2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBVLKX",
+        "title": "A. 10K Yellow Gold 15",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBVLKX?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDW7X6",
+        "title": "B. 10K White Gold 8.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDW7X6?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDVRP3",
+        "title": "B. 10K White Gold 9.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDVRP3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDCC9Q",
+        "title": "A. 10K Yellow Gold 13",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDCC9Q?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDYR69",
+        "title": "C. 10K Rose Gold 10",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDYR69?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGW74T",
+        "title": "C. 10K Rose Gold 14.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGW74T?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFKFR2",
+        "title": "A. 14K Yellow Gold 5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFKFR2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDVWZ1",
+        "title": "B. 10K White Gold 11.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDVWZ1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDR5RG",
+        "title": "B. 10K White Gold 6.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDR5RG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCLFRB",
+        "title": "C. 14K Rose Gold 10",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCLFRB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDJ1RG",
+        "title": "C. 14K Rose Gold 14.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDJ1RG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCP77X",
+        "title": "C. 10K Rose Gold 12.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCP77X?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBF27X",
+        "title": "A. 14K Yellow Gold 11.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBF27X?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDHJHN",
+        "title": "A. 14K Yellow Gold 13",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDHJHN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFM12R",
+        "title": "C. 10K Rose Gold 12",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFM12R?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC6CKQ",
+        "title": "C. 14K Rose Gold 4.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC6CKQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDJ1QR",
+        "title": "A. 10K Yellow Gold 11.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDJ1QR?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD7HG2",
+        "title": "C. 10K Rose Gold 7.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD7HG2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCX4YT",
+        "title": "C. 14K Rose Gold 6.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCX4YT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCWMMM",
+        "title": "A. 14K Yellow Gold 10.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCWMMM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFM138",
+        "title": "A. 14K Yellow Gold 12.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFM138?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD5DTZ",
+        "title": "A. 14K Yellow Gold 6",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD5DTZ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGHNNH",
+        "title": "A. 10K Yellow Gold 13.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGHNNH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLB4QJL",
+        "title": "A. 14K Yellow Gold 8.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLB4QJL?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGHNNQ",
+        "title": "C. 10K Rose Gold 11.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGHNNQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD45JQ",
+        "title": "A. 10K Yellow Gold 7.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD45JQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGKFTJ",
+        "title": "C. 10K Rose Gold 15",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGKFTJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBPNC7",
+        "title": "B. 14K White Gold 7.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBPNC7?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDH1JH",
+        "title": "C. 10K Rose Gold 10.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDH1JH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF7VJJ",
+        "title": "C. 14K Rose Gold 4.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF7VJJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPN75",
+        "title": "A. 10K Yellow Gold 14.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPN75?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF4FT3",
+        "title": "A. 10K Yellow Gold 4",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF4FT3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDRW77",
+        "title": "B. 10K White Gold 4",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDRW77?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDT4M2",
+        "title": "B. 14K White Gold 6.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDT4M2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPLT1",
+        "title": "A. 14K Yellow Gold 11.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCPLT1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDNLN5",
+        "title": "B. 10K White Gold 15",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDNLN5?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBQY56",
+        "title": "B. 14K White Gold 11.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBQY56?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBF293",
+        "title": "B. 14K White Gold 15.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBF293?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDDQ59",
+        "title": "C. 10K Rose Gold 4.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDDQ59?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBK85S",
+        "title": "A. 10K Yellow Gold 9.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBK85S?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDNLN8",
+        "title": "A. 14K Yellow Gold 14.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDNLN8?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBPNBC",
+        "title": "B. 14K White Gold 8.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBPNBC?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD9BHH",
+        "title": "A. 14K Yellow Gold 4.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD9BHH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF4FTD",
+        "title": "B. 14K White Gold 5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF4FTD?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC7RZN",
+        "title": "C. 14K Rose Gold 11.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC7RZN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCK66T",
+        "title": "B. 10K White Gold 6.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCK66T?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBKFSF",
+        "title": "C. 10K Rose Gold 14.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBKFSF?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCMBGP",
+        "title": "C. 10K Rose Gold 15.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCMBGP?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCPRNM",
+        "title": "A. 10K Yellow Gold 8",
+        "is_current_product": true,
+        "link": "https://www.amazon.com/dp/B0CKLCPRNM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLH6LQM",
+        "title": "B. 10K White Gold 7.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLH6LQM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.25"
+          }
+        ],
+        "main_image": "https://m.media-amazon.com/images/I/418kVxlzhAL._AC_.jpg",
+        "images": [
+          {
+            "variant": "MAIN",
+            "link": "https://m.media-amazon.com/images/I/418kVxlzhAL._AC_.jpg"
+          },
+          {
+            "variant": "PT07",
+            "link": "https://m.media-amazon.com/images/I/81XfXV-Ax-L._AC_SL1500_.jpg"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDTZFP",
+        "title": "C. 14K Rose Gold 10.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDTZFP?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFJCMT",
+        "title": "A. 14K Yellow Gold 15",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFJCMT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCMBGN",
+        "title": "C. 14K Rose Gold 9",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCMBGN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDCQWM",
+        "title": "B. 10K White Gold 14.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDCQWM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDWPJ8",
+        "title": "B. 10K White Gold 10.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDWPJ8?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCC25G",
+        "title": "B. 14K White Gold 7.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCC25G?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCJ7K3",
+        "title": "C. 10K Rose Gold 12.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCJ7K3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF8N87",
+        "title": "A. 14K Yellow Gold 6.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF8N87?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF32PH",
+        "title": "C. 14K Rose Gold 7",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF32PH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCHLK5",
+        "title": "A. 14K Yellow Gold 12",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCHLK5?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC7ZHN",
+        "title": "C. 10K Rose Gold 6",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC7ZHN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFJP6D",
+        "title": "A. 10K Yellow Gold 16",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFJP6D?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDRVCT",
+        "title": "C. 14K Rose Gold 9.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDRVCT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGMCH9",
+        "title": "B. 10K White Gold 13.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGMCH9?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCFVDD",
+        "title": "B. 10K White Gold 14.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCFVDD?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCFVDB",
+        "title": "A. 10K Yellow Gold 8.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCFVDB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCLG4B",
+        "title": "C. 14K Rose Gold 12.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCLG4B?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDQFGH",
+        "title": "A. 10K Yellow Gold 11.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDQFGH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFNCB",
+        "title": "C. 10K Rose Gold 9.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFNCB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGBR42",
+        "title": "A. 10K Yellow Gold 12",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGBR42?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFXF71",
+        "title": "A. 10K Yellow Gold 15.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFXF71?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGG266",
+        "title": "A. 14K Yellow Gold 9.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGG266?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFDCM1",
+        "title": "B. 14K White Gold 4.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFDCM1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCF958",
+        "title": "C. 14K Rose Gold 9.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCF958?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFTP1",
+        "title": "C. 14K Rose Gold 15.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFTP1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF5HS7",
+        "title": "B. 10K White Gold 16",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF5HS7?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCKLLD",
+        "title": "B. 14K White Gold 13",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCKLLD?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGM375",
+        "title": "B. 14K White Gold 7.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGM375?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCN67R",
+        "title": "C. 10K Rose Gold 4",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCN67R?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC8HMM",
+        "title": "C. 10K Rose Gold 7.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC8HMM?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGFX4N",
+        "title": "A. 10K Yellow Gold 9",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGFX4N?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFB8LW",
+        "title": "A. 14K Yellow Gold 5.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFB8LW?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCT5DH",
+        "title": "C. 10K Rose Gold 13.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCT5DH?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCF95M",
+        "title": "C. 14K Rose Gold 11.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCF95M?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDQN1C",
+        "title": "A. 14K Yellow Gold 6.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDQN1C?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBVV9W",
+        "title": "C. 10K Rose Gold 14.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBVV9W?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFTNQ",
+        "title": "C. 14K Rose Gold 13.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFTNQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCLZSY",
+        "title": "B. 10K White Gold 11.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCLZSY?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCT5C5",
+        "title": "B. 10K White Gold 13",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCT5C5?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDYWL3",
+        "title": "B. 14K White Gold 6.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDYWL3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBP81M",
+        "title": "C. 14K Rose Gold 7.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBP81M?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDLZHB",
+        "title": "A. 10K Yellow Gold 5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDLZHB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBTTN3",
+        "title": "C. 10K Rose Gold 5.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBTTN3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCGTX6",
+        "title": "A. 14K Yellow Gold 16",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCGTX6?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "16"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDX7P1",
+        "title": "A. 14K Yellow Gold 15.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDX7P1?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDFX4Z",
+        "title": "B. 14K White Gold 9.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDFX4Z?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDGLJW",
+        "title": "C. 10K Rose Gold 7.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDGLJW?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD5NDX",
+        "title": "C. 10K Rose Gold 13",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD5NDX?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCM1PQ",
+        "title": "B. 10K White Gold 9",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCM1PQ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDZJNV",
+        "title": "B. 10K White Gold 11.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDZJNV?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDNCTR",
+        "title": "B. 14K White Gold 12.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDNCTR?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCF953",
+        "title": "B. 10K White Gold 10",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCF953?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBY7DR",
+        "title": "B. 14K White Gold 4.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBY7DR?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBLHMJ",
+        "title": "C. 10K Rose Gold 4.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBLHMJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC8M5M",
+        "title": "C. 10K Rose Gold 10.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC8M5M?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDZJNS",
+        "title": "A. 10K Yellow Gold 14.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDZJNS?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCVJFX",
+        "title": "B. 10K White Gold 12.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCVJFX?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFWXKX",
+        "title": "B. 14K White Gold 13.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFWXKX?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF74SS",
+        "title": "C. 10K Rose Gold 15.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF74SS?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "15.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBL4X4",
+        "title": "A. 10K Yellow Gold 13.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBL4X4?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBPP1Z",
+        "title": "B. 10K White Gold 7.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBPP1Z?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGY4SK",
+        "title": "C. 14K Rose Gold 5.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGY4SK?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBVKXG",
+        "title": "A. 10K Yellow Gold 14",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBVKXG?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBPP1S",
+        "title": "B. 14K White Gold 4",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBPP1S?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDJ1PB",
+        "title": "C. 10K Rose Gold 13.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDJ1PB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLFX651",
+        "title": "B. 14K White Gold 10.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLFX651?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDHWQ6",
+        "title": "A. 10K Yellow Gold 14.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDHWQ6?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "14.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDMP3B",
+        "title": "A. 10K Yellow Gold 10",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDMP3B?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCZTR3",
+        "title": "A. 10K Yellow Gold 12.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCZTR3?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD61KT",
+        "title": "B. 14K White Gold 5.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD61KT?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "5.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD5DSC",
+        "title": "A. 10K Yellow Gold 12.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD5DSC?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "12.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLB4ZJJ",
+        "title": "B. 10K White Gold 4.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLB4ZJJ?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLF29MB",
+        "title": "B. 10K White Gold 8.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLF29MB?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKL8SFST",
+        "title": "B. 10K White Gold 10.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKL8SFST?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBQLHX",
+        "title": "B. 14K White Gold 8.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBQLHX?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDTXNR",
+        "title": "B. 14K White Gold 7",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDTXNR?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "7"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDJ32W",
+        "title": "A. 14K Yellow Gold 11.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDJ32W?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 14K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKL7DZTN",
+        "title": "B. 10K White Gold 4.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKL7DZTN?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 10K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLD95YP",
+        "title": "C. 10K Rose Gold 10.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLD95YP?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLB5P3K",
+        "title": "C. 14K Rose Gold 13",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLB5P3K?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "13"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBLNKP",
+        "title": "C. 10K Rose Gold 11.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBLNKP?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLBMJQ6",
+        "title": "A. 10K Yellow Gold 10.75",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLBMJQ6?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "A. 10K Yellow Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "10.75"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCWZF2",
+        "title": "C. 14K Rose Gold 8",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCWZF2?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "8"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLCL5MV",
+        "title": "C. 10K Rose Gold 4.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLCL5MV?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "4.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLDTZB9",
+        "title": "C. 10K Rose Gold 6.25",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLDTZB9?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 10K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "6.25"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLC2MJF",
+        "title": "B. 14K White Gold 9.5",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLC2MJF?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "B. 14K White Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "9.5"
+          }
+        ]
+      },
+      {
+        "asin": "B0CKLGM345",
+        "title": "C. 14K Rose Gold 11",
+        "is_current_product": false,
+        "link": "https://www.amazon.com/dp/B0CKLGM345?th=1&psc=1",
+        "dimensions": [
+          {
+            "name": "Color",
+            "value": "C. 14K Rose Gold"
+          },
+          {
+            "name": "Ring Size",
+            "value": "11"
+          }
+        ]
+      }
+    ],
+    "variants_asin_flat": "B0CKLDXCTW,B0CKLCV47X,B0CKLFRSNQ,B0CKLC8M1T,B0CKLC8M1Z,B0CKLCZJGJ,B0CKLDW259,B0CKLBVWJ1,B0CKLCVJCX,B0CKLCNHXB,B0CKLBKG92,B0CKLCL4FC,B0CKLDF153,B0CKLCPPPM,B0CKLC5SH4,B0CKLF5LGB,B0CKLDBS3S,B0CKLC1224,B0CKLF6PLT,B0CKLFPFL5,B0CKLC121D,B0CKLCL4V5,B0CKLCZJG8,B0CKLGB6WQ,B0CKLDGYCW,B0CKLCQVLB,B0CKLCPBH8,B0CKLCW6KG,B0CKL7MYZ3,B0CKLCZGTV,B0CKLG7ZNQ,B0CKLDGLK1,B0CKLD9S1H,B0CKLD9S1G,B0CKLH2FJZ,B0CKLDQDLS,B0CKLFR9YG,B0CKL7GVPH,B0CKLCW6KV,B0CKLB52SR,B0CKLDG2WL,B0CKLC5J66,B0CKLCWNK7,B0CKLF53CK,B0CKLC6RBY,B0CKLDG4JD,B0CKLGLF7N,B0CKLDG4JF,B0CKLGBLCB,B0CKLH2FJ1,B0CKLF1V4F,B0CKLCP4KX,B0CKLH3311,B0CKLDFVP4,B0CKLCMKQV,B0CKLCQJ3D,B0CKLF4KWB,B0CKLDFR7K,B0CKLF663M,B0CKLFPWHG,B0CKLDQMYJ,B0CKLCSZY3,B0CKLH2FHB,B0CKLBW9WM,B0CKLCP1Q2,B0CKLCW2MN,B0CKLD1T4N,B0CKLBPNDN,B0CKLCGHHG,B0CKLCB7F3,B0CKLBX8RS,B0CKLCW2MG,B0CKLGLF6Y,B0CKLFPXZZ,B0CKLDBVGB,B0CKLCNZFQ,B0CKLDVL7F,B0CKLBX8RW,B0CKLDBRNQ,B0CKLDG8LT,B0CKLFWZYP,B0CKLF1BKG,B0CKLDGSQZ,B0CKLGHY8L,B0CKLCF9NL,B0CKLBW9XF,B0CKLGH2LN,B0CKLBKNC8,B0CKLB8DZ4,B0CKLDP1CM,B0CKLBV193,B0CKLCMHV7,B0CKLDN98P,B0CKLDY8FM,B0CKLCLG5S,B0CKLDGM4Z,B0CKLFZWKG,B0CKLCYCH4,B0CKLDG8KM,B0CKLF4TFR,B0CKLCVKQJ,B0CKLBKND8,B0CKLGYZ76,B0CKLDXNDG,B0CKLF6HYH,B0CKLC6TB2,B0CKLDDQ5D,B0CKLF5LD2,B0CKLDV8C2,B0CKLFN6KD,B0CKLDYPYL,B0CKLF33V5,B0CKLBP7YZ,B0CKLCVJR6,B0CKLCTXBT,B0CKLDZ6BK,B0CKLDFLYJ,B0CKLD28N7,B0CKLF8YQX,B0CKLBP7Z2,B0CKLCPBD6,B0CKLCPWMP,B0CKLDYPY4,B0CKLF6TN4,B0CKLCXMB1,B0CKLF1X3S,B0CKLDW22F,B0CKLCPRS2,B0CKLDZ6B2,B0CKLDJRHD,B0CKLD5274,B0CKLDYPXJ,B0CKLDLJ1X,B0CKL7N5DF,B0CKLCPWL8,B0CKLCRXH6,B0CKLCPWL9,B0CKLCRXGT,B0CKLCSCLK,B0CKLDFLXH,B0CKLF4TDN,B0CKLCPWM1,B0CKLDFLXG,B0CKLDWFJ8,B0CKLCJ9C7,B0CKLGKGZF,B0CKLFNL6Q,B0CKLGFPJQ,B0CKLCTXBB,B0CKLDC96C,B0CKLBQ3YF,B0CKLCT6JF,B0CKLGYT7Y,B0CKLBPGBT,B0CKLH3Y6K,B0CKLF4FV6,B0CKLCLFR2,B0CKLBVLKX,B0CKLDW7X6,B0CKLDVRP3,B0CKLDCC9Q,B0CKLDYR69,B0CKLGW74T,B0CKLFKFR2,B0CKLDVWZ1,B0CKLDR5RG,B0CKLCLFRB,B0CKLDJ1RG,B0CKLCP77X,B0CKLBF27X,B0CKLDHJHN,B0CKLFM12R,B0CKLC6CKQ,B0CKLDJ1QR,B0CKLD7HG2,B0CKLCX4YT,B0CKLCWMMM,B0CKLFM138,B0CKLD5DTZ,B0CKLGHNNH,B0CKLB4QJL,B0CKLGHNNQ,B0CKLD45JQ,B0CKLGKFTJ,B0CKLBPNC7,B0CKLDH1JH,B0CKLF7VJJ,B0CKLCPN75,B0CKLF4FT3,B0CKLDRW77,B0CKLDT4M2,B0CKLCPLT1,B0CKLDNLN5,B0CKLBQY56,B0CKLBF293,B0CKLDDQ59,B0CKLBK85S,B0CKLDNLN8,B0CKLBPNBC,B0CKLD9BHH,B0CKLF4FTD,B0CKLC7RZN,B0CKLCK66T,B0CKLBKFSF,B0CKLCMBGP,B0CKLCPRNM,B0CKLH6LQM,B0CKLDTZFP,B0CKLFJCMT,B0CKLCMBGN,B0CKLDCQWM,B0CKLDWPJ8,B0CKLCC25G,B0CKLCJ7K3,B0CKLF8N87,B0CKLF32PH,B0CKLCHLK5,B0CKLC7ZHN,B0CKLFJP6D,B0CKLDRVCT,B0CKLGMCH9,B0CKLCFVDD,B0CKLCFVDB,B0CKLCLG4B,B0CKLDQFGH,B0CKLDFNCB,B0CKLGBR42,B0CKLFXF71,B0CKLGG266,B0CKLFDCM1,B0CKLCF958,B0CKLDFTP1,B0CKLF5HS7,B0CKLCKLLD,B0CKLGM375,B0CKLCN67R,B0CKLC8HMM,B0CKLGFX4N,B0CKLFB8LW,B0CKLCT5DH,B0CKLCF95M,B0CKLDQN1C,B0CKLBVV9W,B0CKLDFTNQ,B0CKLCLZSY,B0CKLCT5C5,B0CKLDYWL3,B0CKLBP81M,B0CKLDLZHB,B0CKLBTTN3,B0CKLCGTX6,B0CKLDX7P1,B0CKLDFX4Z,B0CKLDGLJW,B0CKLD5NDX,B0CKLCM1PQ,B0CKLDZJNV,B0CKLDNCTR,B0CKLCF953,B0CKLBY7DR,B0CKLBLHMJ,B0CKLC8M5M,B0CKLDZJNS,B0CKLCVJFX,B0CKLFWXKX,B0CKLF74SS,B0CKLBL4X4,B0CKLBPP1Z,B0CKLGY4SK,B0CKLBVKXG,B0CKLBPP1S,B0CKLDJ1PB,B0CKLFX651,B0CKLDHWQ6,B0CKLDMP3B,B0CKLCZTR3,B0CKLD61KT,B0CKLD5DSC,B0CKLB4ZJJ,B0CKLF29MB,B0CKL8SFST,B0CKLBQLHX,B0CKLDTXNR,B0CKLDJ32W,B0CKL7DZTN,B0CKLD95YP,B0CKLB5P3K,B0CKLBLNKP,B0CKLBMJQ6,B0CKLCWZF2,B0CKLCL5MV,B0CKLDTZB9,B0CKLC2MJF,B0CKLGM345",
+    "proposition_65_warning": false,
+    "has_size_guide": true,
+    "categories": [
+      {
+        "name": "All Departments"
+      },
+      {
+        "name": "Clothing, Shoes & Jewelry",
+        "link": "https://www.amazon.com/amazon-fashion/b/ref=dp_bc_aui_C_1?ie=UTF8&node=7141123011",
+        "category_id": "7141123011"
+      },
+      {
+        "name": "Men",
+        "link": "https://www.amazon.com/Mens-Fashion/b/ref=dp_bc_aui_C_2?ie=UTF8&node=7147441011",
+        "category_id": "7147441011"
+      },
+      {
+        "name": "Jewelry",
+        "link": "https://www.amazon.com/mens-jewelry/b/ref=dp_bc_aui_C_3?ie=UTF8&node=3887881",
+        "category_id": "3887881"
+      },
+      {
+        "name": "Rings",
+        "link": "https://www.amazon.com/Mens-Rings/b/ref=dp_bc_aui_C_4?ie=UTF8&node=3888171",
+        "category_id": "3888171"
+      }
+    ],
+    "categories_flat": "All Departments > Clothing, Shoes & Jewelry > Men > Jewelry > Rings",
+    "a_plus_content": {
+      "has_a_plus_content": true,
+      "has_brand_story": false,
+      "third_party": true,
+      "company_logo": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/4077b456-733f-469a-a19d-0aa33398e3ef.__CR0,0,600,180_PT0_SX600_V1___.jpg"
+    },
+    "sub_title": {
+      "text": "Visit the Claddagh Gold Store",
+      "link": "https://www.amazon.com/stores/CladdaghGold/page/E9005D9B-AE13-4CF8-BA56-BCCA2FB6D318?ref_=ast_bln&store_ref=bl_ast_dp_brandLogo_sto"
+    },
+    "rating": 3,
+    "rating_breakdown": {
+      "five_star": {
+        "percentage": 0,
+        "count": 0
+      },
+      "four_star": {
+        "percentage": 0,
+        "count": 0
+      },
+      "three_star": {
+        "percentage": 100,
+        "count": 1
+      },
+      "two_star": {
+        "percentage": 0,
+        "count": 0
+      },
+      "one_star": {
+        "percentage": 0,
+        "count": 0
+      }
+    },
+    "ratings_total": 1,
+    "main_image": {
+      "link": "https://m.media-amazon.com/images/I/41sKfQ8Te2L.jpg"
+    },
+    "images": [
+      {
+        "link": "https://m.media-amazon.com/images/I/41sKfQ8Te2L._AC_.jpg",
+        "variant": "MAIN"
+      },
+      {
+        "link": "https://m.media-amazon.com/images/I/81XfXV-Ax-L._AC_SL1500_.jpg",
+        "variant": "PT07"
+      }
+    ],
+    "images_count": 2,
+    "images_flat": "https://m.media-amazon.com/images/I/41sKfQ8Te2L._AC_.jpg,https://m.media-amazon.com/images/I/81XfXV-Ax-L._AC_SL1500_.jpg",
+    "has_360_view": false,
+    "is_bundle": false,
+    "feature_bullets": [
+      "Marrying style and spirituality, this ring serves as a beacon of tradition in a modern world. For those who wear it, it's not just an accessory but a conversation starter, sparking discussions about heritage, faith, and the timeless beauty of symbols that connect generations. Embrace a piece that's both a testament to the past and a nod to the present.",
+      "REAL SOLID GOLD –Each and every piece is designed by hand and brought to life in authethic solid gold. We polish it to perfection by our experienced group of artisans and master jewelers. Our Jewelry is made in either 10K or 14K and is usually available in three colors, Rose, White or the most popular color Yellow Gold.",
+      "TOP QUALITY, AMERICAN MADE – Claddagh Gold is a family-run small business with experience in jewelry going back decades. Today, our workshop is located right in the heart of Los Angeles, California; all our pieces are made in the USA by our close-knit team of resident goldsmiths.",
+      "PERFECTLY GIFTABLE - This unique jewelry is our exclusive design, making this piece a sentimental present for everyone. Want a surprise on Valentine’s Day? Need a birthday gift or anniversary idea for your partner or best friend? This special piece is ready for giving. Or treat yourself and be dressed to impress for a night out, date, party, holiday celebration or any event!",
+      "HAPPINESS GUARANTEED - We make all our products in-house, every piece is hand-crafted and meticulously inspected and packaged with care. Enjoy easy returns and exchanges for 30 days after purchase. If you aren’t completely happy with your purchase for any reason, please get in touch so we can make it right, right away."
+    ],
+    "feature_bullets_count": 5,
+    "feature_bullets_flat": "HAPPINESS GUARANTEED - We make all our products in-house, every piece is hand-crafted and meticulously inspected and packaged with care. Enjoy easy returns and exchanges for 30 days after purchase. If you aren’t completely happy with your purchase for any reason, please get in touch so we can make it right, right away. PERFECTLY GIFTABLE - This unique jewelry is our exclusive design, making this piece a sentimental present for everyone. Want a surprise on Valentine’s Day? Need a birthday gift or anniversary idea for your partner or best friend? This special piece is ready for giving. Or treat yourself and be dressed to impress for a night out, date, party, holiday celebration or any event!. TOP QUALITY, AMERICAN MADE – Claddagh Gold is a family-run small business with experience in jewelry going back decades. Today, our workshop is located right in the heart of Los Angeles, California; all our pieces are made in the USA by our close-knit team of resident goldsmiths. REAL SOLID GOLD –Each and every piece is designed by hand and brought to life in authethic solid gold. We polish it to perfection by our experienced group of artisans and master jewelers. Our Jewelry is made in either 10K or 14K and is usually available in three colors, Rose, White or the most popular color Yellow Gold. Marrying style and spirituality, this ring serves as a beacon of tradition in a modern world. For those who wear it, it's not just an accessory but a conversation starter, sparking discussions about heritage, faith, and the timeless beauty of symbols that connect generations. Embrace a piece that's both a testament to the past and a nod to the present.",
+    "attributes": [
+      {
+        "name": "color",
+        "value": "A. 10K Yellow Gold"
+      }
+    ],
+    "additional_details": [
+      {
+        "name": "Small Business",
+        "value": "This product is from a small business brand. Support small."
+      }
+    ],
+    "additional_details_flat": "Small Business: This product is from a small business brand. Support small.",
+    "buybox_winner": {
+      "maximum_order_quantity": {
+        "value": 30,
+        "hard_maximum": true
+      },
+      "is_prime": false,
+      "is_prime_exclusive_deal": false,
+      "is_amazon_fresh": false,
+      "condition": {
+        "is_new": true
+      },
+      "availability": {
+        "type": "in_stock",
+        "raw": "In stock",
+        "dispatch_days": 1
+      },
+      "fulfillment": {
+        "type": "3p",
+        "standard_delivery": {
+          "date": "December 19 - 24",
+          "name": "$5.99"
+        },
+        "fastest_delivery": {
+          "date": "December 18 - 23",
+          "name": "Or fastest delivery December 18 - 23. Details"
+        },
+        "is_sold_by_amazon": false,
+        "is_fulfilled_by_amazon": false,
+        "is_fulfilled_by_third_party": true,
+        "is_sold_by_third_party": true,
+        "third_party_seller": {
+          "name": "Claddagh Gold",
+          "link": "https://www.amazon.com/gp/help/seller/at-a-glance.html/ref=dp_merchant_link?ie=UTF8&seller=A3QFUH8HSRGR7K&asin=B0CKLCPRNM&ref_=dp_merchant_link",
+          "id": "A3QFUH8HSRGR7K"
+        }
+      },
+      "price": {
+        "symbol": "$",
+        "value": 274.99,
+        "currency": "USD",
+        "raw": "$274.99"
+      },
+      "shipping": {
+        "symbol": "$",
+        "value": 5.99,
+        "currency": "USD",
+        "raw": "$5.99"
+      }
+    },
+    "specifications": [
+      {
+        "name": "Department",
+        "value": "womens"
+      },
+      {
+        "name": "Date First Available",
+        "value": "October 6, 2023"
+      },
+      {
+        "name": "Manufacturer",
+        "value": "Claddagh Gold"
+      },
+      {
+        "name": "ASIN",
+        "value": "B0CKLG57H7"
+      },
+      {
+        "name": "Brand, Seller, or Collection Name",
+        "value": "Claddagh Gold"
+      },
+      {
+        "name": "Metal stamp",
+        "value": "10K"
+      },
+      {
+        "name": "Metal",
+        "value": "Yellow Gold"
+      },
+      {
+        "name": "Material",
+        "value": "Metal"
+      },
+      {
+        "name": "Setting",
+        "value": "No-Setting"
+      },
+      {
+        "name": "Height",
+        "value": "11.5 millimeters"
+      },
+      {
+        "name": "Width",
+        "value": "16 millimeters"
+      },
+      {
+        "name": "Total metal weight",
+        "value": "2.89 g"
+      },
+      {
+        "name": "Ring size",
+        "value": "8"
+      },
+      {
+        "name": "Resizable",
+        "value": "Yes"
+      },
+      {
+        "name": "Best Sellers Rank",
+        "value": "See Top 100 in Clothing, Shoes & Jewelry"
+      },
+      {
+        "name": "Metal type",
+        "value": "Yellow Gold"
+      },
+      {
+        "name": "Country of Origin",
+        "value": "USA"
+      }
+    ],
+    "specifications_flat": "Country of Origin: USA. Metal type: Yellow Gold. Best Sellers Rank: See Top 100 in Clothing, Shoes & Jewelry. Resizable: Yes. Ring size: 8. Total metal weight: 2.89 g. Width: 16 millimeters. Height: 11.5 millimeters. Setting: No-Setting. Material: Metal. Metal: Yellow Gold. Metal stamp: 10K. Brand, Seller, or Collection Name: Claddagh Gold. ASIN: B0CKLG57H7. Manufacturer: Claddagh Gold. Date First Available: October 6, 2023. Department: womens.",
+    "bestsellers_rank": [
+      {
+        "category": "Clothing, Shoes & Jewelry",
+        "rank": 8599898,
+        "link": "https://www.amazon.com/gp/bestsellers/fashion/ref=pd_zg_ts_fashion"
+      },
+      {
+        "category": "Men's Rings",
+        "rank": 30242,
+        "link": "https://www.amazon.com/gp/bestsellers/fashion/3888171/ref=pd_zg_hrsr_fashion"
+      }
+    ],
+    "material": "Metal",
+    "manufacturer": "Claddagh Gold",
+    "first_available": {
+      "raw": "October 6, 2023",
+      "utc": "2023-10-06T00:00:00.000Z"
+    },
+    "bestsellers_rank_flat": "Category: Clothing Shoes & Jewelry | Rank: 8599898, Category: Men's Rings | Rank: 30242"
+  },
+  "brand_store": {
+    "id": "E9005D9B-AE13-4CF8-BA56-BCCA2FB6D318",
+    "link": "https://www.amazon.com/stores/CladdaghGold/page/E9005D9B-AE13-4CF8-BA56-BCCA2FB6D318"
+  },
+  "frequently_bought_together": {
+    "total_price": {
+      "symbol": "$",
+      "value": 403.99,
+      "currency": "USD",
+      "raw": "$403.99"
+    },
+    "products": [
+      {
+        "asin": "B0CKLCPRNM",
+        "title": "Claddagh Gold 10K and 14K Gold Jewish Star of David Textured Signet Ring Available in Yellow, Rose and White Gold with multiple ring sizes",
+        "link": "https://www.amazon.com/dp/B0CKLCPRNM",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/41sKfQ8Te2L._AC_UL116_SR116,116_.jpg",
+        "price": {
+          "symbol": "$",
+          "value": 274.99,
+          "currency": "USD",
+          "raw": "$274.99"
+        }
+      },
+      {
+        "asin": "B083H2FV97",
+        "title": "10k Gold Solid Nugget Ring Gold Heart Ring",
+        "link": "https://www.amazon.com/dp/B083H2FV97",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/51D06bdFEFL._AC_UL116_SR116,116_.jpg",
+        "price": {
+          "symbol": "$",
+          "value": 129,
+          "currency": "USD",
+          "raw": "$129.00"
+        }
+      }
+    ]
+  }
+}
