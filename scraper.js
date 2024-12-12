@@ -46,12 +46,39 @@ async function exportVariantsToCSV(data, asin) {
   const filename = `variants_${asin}_${timestamp}.csv`;
   
   try {
-    // Create CSV header
-    let csvContent = 'Variant ASIN,Parent ASIN\n';
-    
-    // Add each variant
+    // Get all unique dimension names from all variants
+    const dimensionNames = new Set();
     data.product.variants.forEach(variant => {
-      csvContent += `${variant.asin},${data.product.parent_asin}\n`;
+      variant.dimensions?.forEach(dim => {
+        dimensionNames.add(dim.name);
+      });
+    });
+
+    // Create CSV header with all dimension names plus requested variant indicator
+    const headerRow = [
+      'Variant ASIN', 
+      'Parent ASIN', 
+      'Is Requested Variant', // renamed to be more clear
+      ...Array.from(dimensionNames)
+    ];
+    let csvContent = headerRow.join(',') + '\n';
+    
+    // Add each variant with all its dimensions
+    data.product.variants.forEach(variant => {
+      const row = [
+        variant.asin, 
+        data.product.parent_asin,
+        variant.is_current_product ? 'true' : 'false'
+      ];
+      
+      // Add values for each dimension
+      dimensionNames.forEach(dimName => {
+        let value = variant.dimensions?.find(d => d.name === dimName)?.value || '';
+        const escapedValue = value.includes(',') ? `"${value}"` : value;
+        row.push(escapedValue);
+      });
+
+      csvContent += row.join(',') + '\n';
     });
 
     await fs.promises.writeFile(filename, csvContent);
