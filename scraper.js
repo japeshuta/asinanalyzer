@@ -4,6 +4,18 @@ const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
+// Add color constants at the top of the file
+const colors = {
+  reset: '\x1b[0m',
+  bright: '\x1b[1m',
+  green: '\x1b[32m',
+  blue: '\x1b[34m',
+  yellow: '\x1b[33m',
+  red: '\x1b[31m',
+  cyan: '\x1b[36m',
+  magenta: '\x1b[35m'
+};
+
 // Add this near the top of the file, after the imports
 const rl = readline.createInterface({
   input: process.stdin,
@@ -175,7 +187,7 @@ async function batchProcess(inputAsins) {
     .map(asin => asin.trim())
     .filter(asin => asin.length > 0);
 
-  console.log(`Processing ${asins.length} ASINs...`);
+  console.log(colors.cyan + `📊 Processing ${asins.length} ASINs...` + colors.reset);
 
   // Modified CSV header to handle multiple variant columns
   let csvContent = 'Input ASIN,Parent ASIN,Title,Brand,Variant 1,Variant 2,Variant 3,Variant 4,Variant 5,Variant 6,Variant 7,Variant 8,Variant 9,Variant 10\n';
@@ -210,85 +222,108 @@ async function batchProcess(inputAsins) {
   
   try {
     await fs.promises.writeFile(filename, csvContent);
-    console.log(`Batch results written to ${filename}`);
+    console.log(colors.green + `✅ Batch results written to ${filename}` + colors.reset);
   } catch (error) {
     console.error('Error writing batch results:', error);
   }
 }
 
-function displayMenu() {
-  console.log('\nOptions:');
-  console.log('1. Scrape new ASIN');
-  console.log('2. Write last result to file');
-  console.log('3. Export variants to CSV');
-  console.log('4. Save to database');
-  console.log('5. Batch process multiple ASINs');
-  console.log('6. Exit');
-  console.log('---------------------');
+async function batchProcessByParent(inputAsins) {
+  const asins = inputAsins
+    .split(/[\s,]+/)
+    .map(asin => asin.trim())
+    .filter(asin => asin.length > 0);
+
+  console.log(colors.cyan + `📊 Processing ${asins.length} ASINs...` + colors.reset);
+
+  // Object to store unique parent ASINs and their data
+  const parentAsinMap = new Map();
+
+  for (const asin of asins) {
+    console.log(`Processing ASIN: ${asin}...`);
+    const result = await scrapeAmazon(asin);
+    
+    if (result && result.product && result.product.parent_asin) {
+      const parentAsin = result.product.parent_asin;
+      
+      // Only process if we haven't seen this parent ASIN before
+      if (!parentAsinMap.has(parentAsin)) {
+        const variantAsins = result.product.variants 
+          ? result.product.variants.map(v => v.asin)
+          : [];
+        
+        // Pad with empty strings to ensure 10 columns
+        while (variantAsins.length < 10) {
+          variantAsins.push('');
+        }
+
+        parentAsinMap.set(parentAsin, {
+          title: result.product.title,
+          brand: result.product.brand,
+          variants: variantAsins.slice(0, 10)
+        });
+
+        await saveToDatabase(result, asin);
+      }
+    }
+  }
+
+  // Create CSV content
+  let csvContent = 'Parent ASIN,Title,Brand,Variant 1,Variant 2,Variant 3,Variant 4,Variant 5,Variant 6,Variant 7,Variant 8,Variant 9,Variant 10\n';
+
+  // Add each unique parent ASIN and its data
+  for (const [parentAsin, data] of parentAsinMap) {
+    csvContent += `${parentAsin},"${data.title}","${data.brand}",${data.variants.join(',')}\n`;
+  }
+
+  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+  const filename = `parent_batch_results_${timestamp}.csv`;
+  
+  try {
+    await fs.promises.writeFile(filename, csvContent);
+    console.log(colors.green + `✅ Parent batch results written to ${filename}` + colors.reset);
+  } catch (error) {
+    console.error('Error writing batch results:', error);
+  }
 }
 
-async function startApp() {
-  // Initialize database
-  initializeDatabase();
+// Main execution
+console.log('Amazon Product Scraper');
+console.log('---------------------');
 
-  let lastResult = null;
-  let lastAsin = null;
+// Initialize database
+initializeDatabase();
 
+async function mainLoop() {
   while (true) {
-    displayMenu();
+    console.log('\nOptions:');
+    console.log('1. Batch process multiple ASINs');
+    console.log('2. Batch process by parent ASIN');
+    console.log('3. Exit');
+    console.log('---------------------');
     
     const answer = await new Promise((resolve) => {
-      rl.question('Please select an option (1-6): ', resolve);
+      rl.question('Please select an option (1-3): ', resolve);
     });
 
     switch (answer) {
       case '1':
-        const asin = await new Promise((resolve) => {
-          rl.question('Enter ASIN: ', resolve);
-        });
-        console.log('Fetching data...');
-        lastResult = await scrapeAmazon(asin);
-        lastAsin = asin;
-        if (lastResult) {
-          console.log('Data retrieved successfully:');
-          console.log(JSON.stringify(lastResult, null, 2));
-        }
-        break;
-
-      case '2':
-        if (!lastResult) {
-          console.log('No data available to write. Please scrape an ASIN first.');
-        } else {
-          await writeToFile(lastResult, lastAsin);
-        }
-        break;
-
-      case '3':
-        if (!lastResult) {
-          console.log('No data available. Please scrape an ASIN first.');
-        } else {
-          await exportVariantsToCSV(lastResult, lastAsin);
-        }
-        break;
-
-      case '4':
-        if (!lastResult) {
-          console.log('No data available. Please scrape an ASIN first.');
-        } else {
-          console.log('Saving to database...');
-          await saveToDatabase(lastResult, lastAsin);
-          console.log('Data saved successfully!');
-        }
-        break;
-
-      case '5':
         const inputAsins = await new Promise((resolve) => {
           rl.question('Enter ASINs (separated by commas or newlines): ', resolve);
         });
+        console.log('Starting batch processing...');
         await batchProcess(inputAsins);
         break;
 
-      case '6':
+      case '2':
+        const parentInputAsins = await new Promise((resolve) => {
+          rl.question('Enter ASINs (separated by commas or newlines): ', resolve);
+        });
+        console.log('Starting parent ASIN processing...');
+        await batchProcessByParent(parentInputAsins);
+        break;
+
+      case '3':
         console.log('\nThank you for using the Amazon Product Scraper!');
         db.close();
         rl.close();
@@ -300,10 +335,12 @@ async function startApp() {
   }
 }
 
-// Start the application
-console.log('Amazon Product Scraper');
-console.log('---------------------');
-startApp();
+// Start the program
+mainLoop().catch(error => {
+  console.error('An error occurred:', error);
+  db.close();
+  rl.close();
+});
 
 // Handle cleanup when the program exits
 rl.on('close', () => {
