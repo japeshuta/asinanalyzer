@@ -636,6 +636,33 @@ function normalizeTitle(title) {
     return (title || '').trim().replace(/\s+/g, ' ').toLowerCase();
 }
 
+// Add new function to scrape store data
+async function scrapeStore(storeId) {
+    const params = {
+        api_key: "939D2F2E4B4746AE8E4B6BC407C14238",
+        amazon_domain: "amazon.com",
+        store_id: storeId,
+        type: "store"
+    };
+
+    try {
+        const response = await axios.get('https://api.rainforestapi.com/request', { params });
+        
+        if (response.data.store_results) {
+            // Extract unique ASINs (some stores may have duplicates)
+            const asins = [...new Set(response.data.store_results.map(item => item.asin))];
+            console.log(colors.cyan + `📊 Found ${asins.length} unique ASINs in store` + colors.reset);
+            return asins.join(',');
+        } else {
+            console.log(colors.red + '❌ No results found in store' + colors.reset);
+            return '';
+        }
+    } catch (error) {
+        console.error(colors.red + 'Error scanning store:', error.message + colors.reset);
+        return '';
+    }
+}
+
 // Main execution
 console.log('Amazon Product Scraper');
 console.log('---------------------');
@@ -644,62 +671,84 @@ console.log('---------------------');
 initializeDatabase();
 
 async function mainLoop() {
-  while (true) {
-    console.log('\nOptions:');
-    console.log('1. Batch process multiple ASINs');
-    console.log('2. Batch process by parent ASIN');
-    console.log('3. Analyze variant relationships');
-    console.log('4. Exit');
-    console.log('---------------------');
-    
-    const answer = await new Promise((resolve) => {
-      rl.question('Please select an option (1-4): ', resolve);
-    });
-
-    switch (answer) {
-      case '1':
-        const inputAsins = await new Promise((resolve) => {
-          rl.question('Enter ASINs (separated by commas or newlines): ', resolve);
+    while (true) {
+        console.log('\nOptions:');
+        console.log('1. Batch process multiple ASINs');
+        console.log('2. Batch process by parent ASIN');
+        console.log('3. Analyze variant relationships');
+        console.log('4. Scan store');
+        console.log('5. Exit');
+        console.log('---------------------');
+        
+        const answer = await new Promise((resolve) => {
+            rl.question('Please select an option (1-5): ', resolve);
         });
-        console.log('Starting batch processing...');
-        await batchProcess(inputAsins);
-        break;
 
-      case '2':
-        const parentInputAsins = await new Promise((resolve) => {
-          rl.question('Enter ASINs (separated by commas or newlines): ', resolve);
-        });
-        console.log('Starting parent ASIN processing...');
-        await batchProcessByParent(parentInputAsins);
-        break;
+        switch (answer) {
+            case '1':
+                const inputAsins = await new Promise((resolve) => {
+                    rl.question('Enter ASINs (separated by commas or newlines): ', resolve);
+                });
+                console.log('Starting batch processing...');
+                await batchProcess(inputAsins);
+                break;
 
-      case '3':
-        const singleAsin = await new Promise((resolve) => {
-          rl.question('Enter single ASIN to analyze: ', resolve);
-        });
-        await analyzeVariantRelationships(singleAsin.trim());
-        break;
+            case '2':
+                const parentInputAsins = await new Promise((resolve) => {
+                    rl.question('Enter ASINs (separated by commas or newlines): ', resolve);
+                });
+                console.log('Starting parent ASIN processing...');
+                await batchProcessByParent(parentInputAsins);
+                break;
 
-      case '4':
-        console.log('\nThank you for using the Amazon Product Scraper!');
-        db.close();
-        rl.close();
-        return;
+            case '3':
+                const singleAsin = await new Promise((resolve) => {
+                    rl.question('Enter single ASIN to analyze: ', resolve);
+                });
+                await analyzeVariantRelationships(singleAsin.trim());
+                break;
 
-      default:
-        console.log('Invalid option. Please try again.');
+            case '4':
+                const storeId = await new Promise((resolve) => {
+                    rl.question('Enter store ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX): ', resolve);
+                });
+                
+                // Validate store ID format
+                const storeIdRegex = /^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$/i;
+                if (!storeIdRegex.test(storeId.trim())) {
+                    console.log(colors.red + '❌ Invalid store ID format' + colors.reset);
+                    break;
+                }
+
+                console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
+                const storeAsins = await scrapeStore(storeId.trim());
+                
+                if (storeAsins) {
+                    console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
+                    await batchProcessByParent(storeAsins);
+                }
+                break;
+
+            case '5':
+                console.log('\nThank you for using the Amazon Product Scraper!');
+                db.close();
+                rl.close();
+                return;
+
+            default:
+                console.log('Invalid option. Please try again.');
+        }
     }
-  }
 }
 
 // Start the program
 mainLoop().catch(error => {
-  console.error('An error occurred:', error);
-  db.close();
-  rl.close();
+    console.error('An error occurred:', error);
+    db.close();
+    rl.close();
 });
 
 // Handle cleanup when the program exits
 rl.on('close', () => {
-  process.exit(0);
+    process.exit(0);
 });
