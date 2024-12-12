@@ -291,9 +291,10 @@ async function batchProcessByParent(inputAsins) {
 async function analyzeVariantRelationships(initialAsin) {
   console.log('Starting variant relationship analysis...');
   
-  // Store processed ASINs to avoid duplicates
   const processedAsins = new Set();
   const results = [];
+  let variationTypes = new Set();
+  let parentTitle = '';
   
   // Process initial ASIN
   const initialResult = await scrapeAmazon(initialAsin);
@@ -302,47 +303,206 @@ async function analyzeVariantRelationships(initialAsin) {
     return;
   }
 
-  // Process the initial product
-  results.push({
-    asin: initialAsin,
-    parentAsin: initialResult.product.parent_asin,
-    title: initialResult.product.title,
-    type: initialAsin === initialResult.product.parent_asin ? 'PARENT' : 'CHILD'
-  });
-  processedAsins.add(initialAsin);
+  const parentAsin = initialResult.product.parent_asin;
+  console.log(`Found parent ASIN: ${parentAsin}`);
 
-  // Process all variants
+  // Collect all variation types first from initial result
+  if (initialResult.product.variants) {
+    initialResult.product.variants.forEach(variant => {
+      if (variant.dimensions) {
+        variant.dimensions.forEach(dim => {
+          variationTypes.add(dim.name);
+        });
+      }
+    });
+  }
+
+  // Process parent first
+  if (parentAsin && parentAsin !== initialAsin) {
+    console.log(`\nProcessing parent ASIN first: ${parentAsin}`);
+    const parentResult = await scrapeAmazon(parentAsin);
+    
+    if (parentResult && parentResult.product) {
+        const parentVariationValues = {};
+        
+        // First try to get variant info from the initial result's variants
+        if (initialResult.product.variants) {
+            console.log('Checking initial result variants for parent data...');
+            initialResult.product.variants.forEach(variant => {
+                if (variant.dimensions) {
+                    variant.dimensions.forEach(dim => {
+                        variationTypes.add(dim.name);
+                        // Store default values from all variants
+                        if (!parentVariationValues[dim.name]) {
+                            parentVariationValues[dim.name] = '';
+                        }
+                    });
+                }
+            });
+        }
+
+        // Then check parent's own variants
+        if (parentResult.product.variants) {
+            console.log('Checking parent result variants...');
+            parentResult.product.variants.forEach(variant => {
+                if (variant.dimensions) {
+                    variant.dimensions.forEach(dim => {
+                        variationTypes.add(dim.name);
+                        // Store default values from all variants
+                        if (!parentVariationValues[dim.name]) {
+                            parentVariationValues[dim.name] = '';
+                        }
+                    });
+                }
+            });
+        }
+
+        parentTitle = parentResult.product.title;
+        
+        results.push({
+            asin: parentAsin,
+            parentAsin: parentAsin,
+            title: parentResult.product.title,
+            title_excluding_variant_name: parentResult.product.title_excluding_variant_name || parentResult.product.title,
+            type: 'PARENT',
+            variationValues: parentVariationValues
+        });
+        processedAsins.add(parentAsin);
+        console.log(`Successfully processed parent ASIN: ${parentAsin}`);
+    }
+  }
+
+  // Calculate total variants
+  const totalVariants = (initialResult.product.variants?.length || 0) + 1;
+  let counter = 1;
+
+  // Process initial ASIN if it's not the parent
+  if (!processedAsins.has(initialAsin)) {
+    console.log(`Processing initial ASIN (${counter}/${totalVariants}): ${initialAsin}`);
+
+    const initialVariationValues = {};
+    
+    // First, initialize all known variation types
+    Array.from(variationTypes).forEach(type => {
+        initialVariationValues[type] = '';
+    });
+    
+    // Then try to get specific values for this ASIN
+    if (initialResult.product.variants) {
+        console.log('Checking variants for initial ASIN data...');
+        const thisVariant = initialResult.product.variants.find(v => v.asin === initialAsin);
+        if (thisVariant && thisVariant.dimensions) {
+            thisVariant.dimensions.forEach(dim => {
+                initialVariationValues[dim.name] = dim.value;
+            });
+        }
+
+        // If we didn't find the specific variant, check all variants for this ASIN's values
+        if (!thisVariant) {
+            initialResult.product.variants.forEach(variant => {
+                if (variant.asin === initialAsin && variant.dimensions) {
+                    variant.dimensions.forEach(dim => {
+                        initialVariationValues[dim.name] = dim.value;
+                    });
+                }
+            });
+        }
+    }
+
+    // Also check direct dimensions
+    if (initialResult.product.dimensions && typeof initialResult.product.dimensions === 'object') {
+        Object.entries(initialResult.product.dimensions).forEach(([name, value]) => {
+            if (typeof value === 'string') {
+                initialVariationValues[name] = value;
+            }
+        });
+    }
+
+    const isDefaultChild = initialResult.product.title === parentTitle;
+
+    results.push({
+        asin: initialAsin,
+        parentAsin: parentAsin,
+        title: initialResult.product.title,
+        title_excluding_variant_name: initialResult.product.title_excluding_variant_name || initialResult.product.title,
+        type: initialAsin === parentAsin ? 'PARENT' : (isDefaultChild ? 'DEFAULT CHILD' : 'CHILD'),
+        variationValues: initialVariationValues
+    });
+    processedAsins.add(initialAsin);
+    counter++;
+  }
+
+  // Process remaining variants
   if (initialResult.product.variants) {
     for (const variant of initialResult.product.variants) {
       if (!processedAsins.has(variant.asin)) {
-        console.log(`Processing variant ASIN: ${variant.asin}...`);
+        console.log(`Processing variant (${counter}/${totalVariants}): ${variant.asin}`);
         const variantResult = await scrapeAmazon(variant.asin);
         
         if (variantResult && variantResult.product) {
+          const variationValues = {};
+          // Get variation values from dimensions
+          if (variantResult.product.dimensions && Array.isArray(variantResult.product.dimensions)) {
+            variantResult.product.dimensions.forEach(dim => {
+              variationValues[dim.name] = dim.value;
+              variationTypes.add(dim.name);
+            });
+          } else if (variantResult.product.dimensions && typeof variantResult.product.dimensions === 'object') {
+            Object.entries(variantResult.product.dimensions).forEach(([name, value]) => {
+              variationValues[name] = value;
+              variationTypes.add(name);
+            });
+          }
+          // Also check the variant dimensions from the initial result
+          if (variant.dimensions) {
+            variant.dimensions.forEach(dim => {
+              variationValues[dim.name] = dim.value;
+              variationTypes.add(dim.name);
+            });
+          }
+
+          const isDefaultChild = variantResult.product.title === parentTitle;
+
           results.push({
             asin: variant.asin,
             parentAsin: variantResult.product.parent_asin,
             title: variantResult.product.title,
-            type: variant.asin === variantResult.product.parent_asin ? 'PARENT' : 'CHILD'
+            title_excluding_variant_name: variantResult.product.title_excluding_variant_name || variantResult.product.title,
+            type: variant.asin === parentAsin ? 'PARENT' : (isDefaultChild ? 'DEFAULT CHILD' : 'CHILD'),
+            variationValues: variationValues
           });
         }
         processedAsins.add(variant.asin);
+        counter++;
       }
     }
   }
 
   // Create CSV output
+  const variationTypeArray = Array.from(variationTypes);
   const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
   const filename = `variant_relationships_${initialAsin}_${timestamp}.csv`;
   
-  let csvContent = 'ASIN,Parent ASIN,Title,Relationship\n';
+  let csvContent = 'ASIN,Parent ASIN,Title,Title Excluding Variant,Relationship';
+  variationTypeArray.forEach(varType => {
+    csvContent += `,${varType}`;
+  });
+  csvContent += '\n';
+
   results.forEach(result => {
-    csvContent += `${result.asin},${result.parentAsin},"${result.title}",${result.type}\n`;
+    csvContent += `${result.asin},${result.parentAsin},"${result.title}","${result.title_excluding_variant_name}",${result.type}`;
+    variationTypeArray.forEach(varType => {
+      const value = result.variationValues[varType] || '';
+      csvContent += `,"${value}"`;
+    });
+    csvContent += '\n';
   });
 
   try {
     await fs.promises.writeFile(filename, csvContent);
+    console.log(`\nCompleted processing all ${totalVariants} variants!`);
     console.log(`Variant relationship analysis written to ${filename}`);
+    console.log(`Found ${variationTypeArray.length} variation types: ${variationTypeArray.join(', ')}`);
   } catch (error) {
     console.error('Error writing analysis results:', error);
   }
