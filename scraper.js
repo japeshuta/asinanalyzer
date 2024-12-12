@@ -295,6 +295,7 @@ async function analyzeVariantRelationships(initialAsin) {
   const results = [];
   let variationTypes = new Set();
   let parentTitle = '';
+  let parentTitleExcludingVariant = '';
   
   // Process initial ASIN
   const initialResult = await scrapeAmazon(initialAsin);
@@ -358,6 +359,11 @@ async function analyzeVariantRelationships(initialAsin) {
         }
 
         parentTitle = normalizeTitle(parentResult.product.title);
+        parentTitleExcludingVariant = normalizeTitle(parentResult.product.title_excluding_variant_name);
+        
+        console.log('\nParent titles stored:');
+        console.log('Full:', parentTitle);
+        console.log('Excluding variant:', parentTitleExcludingVariant);
         
         results.push({
             asin: parentAsin,
@@ -420,10 +426,16 @@ async function analyzeVariantRelationships(initialAsin) {
     }
 
     const initialTitle = normalizeTitle(initialResult.product.title);
-    const isDefaultChild = initialTitle === parentTitle;
-    console.log(`Comparing titles for default child check:
-    Parent: "${parentTitle}"
-    Initial: "${initialTitle}"
+    const isDefaultChild = 
+        normalizeTitle(initialResult.product.title) === parentTitle || 
+        normalizeTitle(initialResult.product.title_excluding_variant_name) === parentTitleExcludingVariant;
+    console.log(`\nComparing titles for default child check (${initialAsin}):
+    Full Title Match:
+      Parent: "${parentTitle}"
+      This:   "${normalizeTitle(initialResult.product.title)}"
+    Excluding Variant Match:
+      Parent: "${parentTitleExcludingVariant}"
+      This:   "${normalizeTitle(initialResult.product.title_excluding_variant_name)}"
     Is Default: ${isDefaultChild}`);
 
     results.push({
@@ -469,10 +481,16 @@ async function analyzeVariantRelationships(initialAsin) {
           }
 
           const variantTitle = normalizeTitle(variantResult.product.title);
-          const isDefaultChild = variantTitle === parentTitle;
-          console.log(`Comparing titles for variant default child check:
-          Parent: "${parentTitle}"
-          Variant: "${variantTitle}"
+          const isDefaultChild = 
+              normalizeTitle(variantResult.product.title) === parentTitle || 
+              normalizeTitle(variantResult.product.title_excluding_variant_name) === parentTitleExcludingVariant;
+          console.log(`\nComparing titles for variant default child check (${variant.asin}):
+          Full Title Match:
+            Parent: "${parentTitle}"
+            This:   "${normalizeTitle(variantResult.product.title)}"
+          Excluding Variant Match:
+            Parent: "${parentTitleExcludingVariant}"
+            This:   "${normalizeTitle(variantResult.product.title_excluding_variant_name)}"
           Is Default: ${isDefaultChild}`);
 
           results.push({
@@ -530,7 +548,7 @@ async function analyzeVariantRelationships(initialAsin) {
 
 // Helper function to normalize titles
 function normalizeTitle(title) {
-    return title.trim().replace(/\s+/g, ' ').toLowerCase();
+    return (title || '').trim().replace(/\s+/g, ' ').toLowerCase();
 }
 
 // Main execution
