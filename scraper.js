@@ -362,6 +362,7 @@ async function analyzeVariantRelationships(initialAsin) {
         results.push({
             asin: parentAsin,
             parentAsin: parentAsin,
+            category: parentResult.product.categories_flat || parentResult.product.search_alias?.title || '',
             title: parentResult.product.title,
             title_excluding_variant_name: parentResult.product.title_excluding_variant_name || parentResult.product.title,
             type: 'PARENT',
@@ -428,6 +429,7 @@ async function analyzeVariantRelationships(initialAsin) {
     results.push({
         asin: initialAsin,
         parentAsin: parentAsin,
+        category: initialResult.product.categories_flat || initialResult.product.search_alias?.title || '',
         title: initialResult.product.title,
         title_excluding_variant_name: initialResult.product.title_excluding_variant_name || initialResult.product.title,
         type: initialAsin === parentAsin ? 'PARENT' : (isDefaultChild ? 'DEFAULT CHILD' : 'CHILD'),
@@ -476,6 +478,7 @@ async function analyzeVariantRelationships(initialAsin) {
           results.push({
             asin: variant.asin,
             parentAsin: variantResult.product.parent_asin,
+            category: variantResult.product.categories_flat || variantResult.product.search_alias?.title || '',
             title: variantResult.product.title,
             title_excluding_variant_name: variantResult.product.title_excluding_variant_name || variantResult.product.title,
             type: variant.asin === parentAsin ? 'PARENT' : (isDefaultChild ? 'DEFAULT CHILD' : 'CHILD'),
@@ -500,17 +503,17 @@ async function analyzeVariantRelationships(initialAsin) {
 
   const filename = `${timestamp}_${initialAsin}.csv`;
 
-  let csvContent = 'ASIN,Parent ASIN,Title,Title Excluding Variant,Relationship';
+  let csvContent = 'ASIN,Parent ASIN,Category,Title,Title Excluding Variant,Relationship';
   variationTypeArray.forEach(varType => {
     csvContent += `,${varType}`;
   });
   csvContent += '\n';
 
   results.forEach(result => {
-    csvContent += `${result.asin},${result.parentAsin},"${result.title}","${result.title_excluding_variant_name}",${result.type}`;
+    csvContent += `${result.asin},${result.parentAsin},"${result.category}","${result.title}","${result.title_excluding_variant_name}",${result.type}`;
     variationTypeArray.forEach(varType => {
-      const value = result.variationValues[varType] || '';
-      csvContent += `,"${value}"`;
+        const value = result.variationValues[varType] || '';
+        csvContent += `,"${value}"`;
     });
     csvContent += '\n';
   });
