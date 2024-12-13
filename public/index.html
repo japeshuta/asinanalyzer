@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Store Analyzer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .container {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .status {
+            margin: 20px 0;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        .error { background: #ffe6e6; }
+        .success { background: #e6ffe6; }
+        .processing { background: #e6f3ff; }
+        button { 
+            padding: 10px 20px;
+            margin: 10px 0;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Amazon Store Analyzer</h1>
+        
+        <div>
+            <label for="storeId">Store ID:</label>
+            <input type="text" id="storeId" placeholder="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX">
+        </div>
+        
+        <button onclick="startAnalysis()">Analyze Store</button>
+        
+        <div id="status" class="status"></div>
+    </div>
+
+    <script>
+        async function startAnalysis() {
+            const storeId = document.getElementById('storeId').value;
+            const statusDiv = document.getElementById('status');
+            
+            try {
+                // Start the analysis
+                const response = await fetch('/api/scrape', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ storeId, option: 4 })
+                });
+                
+                const { jobId } = await response.json();
+                
+                // Poll for status
+                statusDiv.className = 'status processing';
+                statusDiv.textContent = 'Processing...';
+                
+                const checkStatus = async () => {
+                    const statusResponse = await fetch(`/api/status/${jobId}`);
+                    const result = await statusResponse.json();
+                    
+                    if (result.status === 'error') {
+                        statusDiv.className = 'status error';
+                        statusDiv.textContent = `Error: ${result.error}`;
+                        return;
+                    }
+                    
+                    if (result.status === 'complete') {
+                        statusDiv.className = 'status success';
+                        statusDiv.innerHTML = 'Analysis complete! <br>' +
+                            `<a href="/api/download/${jobId}" download>Download Results</a>`;
+                        return;
+                    }
+                    
+                    // Continue polling
+                    setTimeout(checkStatus, 2000);
+                };
+                
+                checkStatus();
+                
+            } catch (error) {
+                statusDiv.className = 'status error';
+                statusDiv.textContent = `Error: ${error.message}`;
+            }
+        }
+    </script>
+</body>
+</html> 

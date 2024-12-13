@@ -109,10 +109,24 @@ async function scrapeAmazon(asin) {
   };
 
   try {
+    console.log(colors.cyan + `Making Rainforest API request for ASIN: ${asin}...` + colors.reset);
     const response = await axios.get('https://api.rainforestapi.com/request', { params });
+    console.log(colors.green + `✅ Received response from Rainforest API` + colors.reset);
+    
+    // Log the first level of the response structure
+    console.log(colors.yellow + '\nResponse structure:' + colors.reset);
+    console.log('Keys in response:', Object.keys(response.data));
+    if (response.data.product) {
+        console.log('Keys in product:', Object.keys(response.data.product));
+        console.log('Brand store data:', response.data.product.brand_store);
+    }
+    
     return response.data;
   } catch (error) {
-    console.error('Error:', error.message);
+    console.error(colors.red + 'Error with Rainforest API:', error.message + colors.reset);
+    if (error.response) {
+        console.error(colors.red + 'Error response:', JSON.stringify(error.response.data, null, 2) + colors.reset);
+    }
     return null;
   }
 }
@@ -819,30 +833,104 @@ async function mainLoop() {
                 break;
 
             case '3':
-                const singleAsin = await new Promise((resolve) => {
-                    rl.question('Enter single ASIN to analyze: ', resolve);
+                const input = await new Promise((resolve) => {
+                    rl.question('Enter store ID or ASIN: ', resolve);
                 });
-                await analyzeVariantRelationships(singleAsin.trim());
+                
+                const trimmedInput = input.trim();
+                
+                // Check if input is a store ID or ASIN
+                const isStoreId = /^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$/i.test(trimmedInput);
+                const isAsin = /^[A-Z0-9]{10}$/.test(trimmedInput);
+                
+                if (isStoreId) {
+                    // Handle store ID
+                    console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
+                    const storeAsins = await scrapeStore(trimmedInput);
+                    
+                    if (storeAsins) {
+                        console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
+                        await batchProcessByParent(storeAsins);
+                    }
+                } else if (isAsin) {
+                    // Handle ASIN
+                    console.log(colors.cyan + '🔍 Fetching product data...' + colors.reset);
+                    const result = await scrapeAmazon(trimmedInput);
+                    
+                    if (result && result.product && result.product.brand_store) {
+                        const storeId = result.product.brand_store.id;
+                        console.log(colors.green + `✅ Found store ID: ${storeId}` + colors.reset);
+                        
+                        const proceed = await new Promise((resolve) => {
+                            rl.question(colors.yellow + `Proceed with scanning store ${storeId}? (y/n): ` + colors.reset, 
+                                answer => resolve(answer.toLowerCase() === 'y'));
+                        });
+                        
+                        if (proceed) {
+                            console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
+                            const storeAsins = await scrapeStore(storeId);
+                            
+                            if (storeAsins) {
+                                console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
+                                await batchProcessByParent(storeAsins);
+                            }
+                        }
+                    } else {
+                        console.log(colors.red + '❌ Could not find store ID for this ASIN' + colors.reset);
+                    }
+                } else {
+                    console.log(colors.red + '❌ Invalid input. Please enter either a valid store ID or ASIN' + colors.reset);
+                }
                 break;
 
             case '4':
-                const storeId = await new Promise((resolve) => {
-                    rl.question('Enter store ID (format: XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX): ', resolve);
+                const storeInput = await new Promise((resolve) => {
+                    rl.question('Enter store ID or ASIN: ', resolve);
                 });
                 
-                // Validate store ID format
-                const storeIdRegex = /^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$/i;
-                if (!storeIdRegex.test(storeId.trim())) {
-                    console.log(colors.red + '❌ Invalid store ID format' + colors.reset);
-                    break;
-                }
-
-                console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
-                const storeAsins = await scrapeStore(storeId.trim());
+                const trimmedStoreInput = storeInput.trim();
+                const isStoreIdFormat = /^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$/i.test(trimmedStoreInput);
+                const isAsinFormat = /^[A-Z0-9]{10}$/.test(trimmedStoreInput);
                 
-                if (storeAsins) {
-                    console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
-                    await batchProcessByParent(storeAsins);
+                if (isStoreIdFormat) {
+                    console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
+                    const storeAsins = await scrapeStore(trimmedStoreInput);
+                    
+                    if (storeAsins) {
+                        console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
+                        await batchProcessByParent(storeAsins);
+                    }
+                } else if (isAsinFormat) {
+                    console.log(colors.cyan + '🔍 Fetching product data...' + colors.reset);
+                    const result = await scrapeAmazon(trimmedStoreInput);
+                    
+                    if (result && result.brand_store) {
+                        const storeId = result.brand_store.id;
+                        if (storeId) {
+                            console.log(colors.green + `✅ Found store ID: ${storeId}` + colors.reset);
+                            
+                            const proceed = await new Promise((resolve) => {
+                                rl.question(colors.yellow + `Proceed with scanning store ${storeId}? (y/n): ` + colors.reset, 
+                                    answer => resolve(answer.toLowerCase() === 'y'));
+                            });
+                            
+                            if (proceed) {
+                                console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
+                                const storeAsins = await scrapeStore(storeId);
+                                
+                                if (storeAsins) {
+                                    console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
+                                    await batchProcessByParent(storeAsins);
+                                }
+                            }
+                        } else {
+                            console.log(colors.red + '❌ Store ID not found in brand_store object' + colors.reset);
+                        }
+                    } else {
+                        console.log(colors.red + '❌ No brand_store data found in response' + colors.reset);
+                    }
+                } else {
+                    console.log(colors.red + '❌ Invalid input. Please enter either a valid store ID or ASIN' + colors.reset);
                 }
                 break;
 
