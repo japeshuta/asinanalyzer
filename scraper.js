@@ -109,18 +109,7 @@ async function scrapeAmazon(asin) {
   };
 
   try {
-    console.log(colors.cyan + `Making Rainforest API request for ASIN: ${asin}...` + colors.reset);
     const response = await axios.get('https://api.rainforestapi.com/request', { params });
-    console.log(colors.green + `✅ Received response from Rainforest API` + colors.reset);
-    
-    // Log the first level of the response structure
-    console.log(colors.yellow + '\nResponse structure:' + colors.reset);
-    console.log('Keys in response:', Object.keys(response.data));
-    if (response.data.product) {
-        console.log('Keys in product:', Object.keys(response.data.product));
-        console.log('Brand store data:', response.data.product.brand_store);
-    }
-    
     return response.data;
   } catch (error) {
     console.error(colors.red + 'Error with Rainforest API:', error.message + colors.reset);
@@ -308,6 +297,7 @@ async function analyzeVariantRelationships(initialAsin) {
   
   const processedAsins = new Set();
   const results = [];
+  const unavailableAsins = [];  // New array to track unavailable ASINs
   let variationTypes = new Set();
   let parentTitle = '';
   let parentTitleExcludingVariant = '';
@@ -316,6 +306,13 @@ async function analyzeVariantRelationships(initialAsin) {
   const initialResult = await scrapeAmazon(initialAsin);
   if (!initialResult || !initialResult.product) {
     console.log('Could not fetch data for initial ASIN');
+    // Track the unavailable initial ASIN
+    unavailableAsins.push({
+      asin: initialAsin,
+      status: determineUnavailableStatus(initialResult),
+      parentAsin: 'Unknown',
+      title: 'Unknown'
+    });
     return;
   }
 
@@ -517,6 +514,14 @@ async function analyzeVariantRelationships(initialAsin) {
             type: variant.asin === parentAsin ? 'PARENT' : (isDefaultChild ? 'DEFAULT CHILD' : 'CHILD'),
             variationValues: variationValues
           });
+        } else {
+          // Track unavailable variant
+          unavailableAsins.push({
+            asin: variant.asin,
+            status: determineUnavailableStatus(variantResult),
+            parentAsin: initialResult.product.parent_asin,
+            title: variant.title || 'Unknown'
+          });
         }
         processedAsins.add(variant.asin);
         counter++;
@@ -566,6 +571,7 @@ async function analyzeVariantRelationships(initialAsin) {
       const workbook = new ExcelJS.Workbook();
       const variantSheet = workbook.addWorksheet('Variant Analysis');
       const attributeSheet = workbook.addWorksheet('Attribute Analysis');
+      const unavailableSheet = workbook.addWorksheet('Unavailable ASINs');  // New worksheet
       
       // First sheet - remains the same
       worksheetData.forEach(row => {
@@ -634,12 +640,37 @@ async function analyzeVariantRelationships(initialAsin) {
       headerRow.font = { bold: true };
       headerRow.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
       
+      // Add unavailable ASINs sheet
+      unavailableSheet.columns = [
+        { header: 'ASIN', key: 'asin' },
+        { header: 'Parent ASIN', key: 'parentAsin' },
+        { header: 'Title', key: 'title' },
+        { header: 'Status', key: 'status' }
+      ];
+
+      unavailableAsins.forEach(item => {
+        unavailableSheet.addRow(item);
+      });
+
+      // Auto-size columns for unavailable sheet
+      unavailableSheet.columns.forEach(column => {
+        let maxLength = 0;
+        column.eachCell({ includeEmpty: true }, cell => {
+          const columnLength = cell.value ? cell.value.toString().length : 0;
+          maxLength = Math.max(maxLength, columnLength);
+        });
+        column.width = Math.min(Math.max(maxLength + 2, 10), 50);
+      });
+      
       // Save workbook to file
       await workbook.xlsx.writeFile(filename);
       
       console.log(`\nCompleted processing all ${results.length} variants!`);
       console.log(`Variant relationship analysis written to ${filename}`);
       console.log(`Found ${variationTypeArray.length} variation types: ${variationTypeArray.join(', ')}`);
+      if (unavailableAsins.length > 0) {
+        console.log(`Found ${unavailableAsins.length} unavailable ASINs - see Unavailable ASINs sheet in ${filename}`);
+      }
   } catch (error) {
       console.error('Error writing analysis results:', error);
   }
@@ -671,37 +702,14 @@ async function scrapeStoreCategory(categoryUrl) {
 
 // Add function to deduplicate ASINs with logging
 async function deduplicateAsins(asins) {
-    console.log(colors.cyan + `\n🔍 Starting deduplication process...` + colors.reset);
-    console.log(colors.cyan + `Initial count: ${asins.length} ASINs` + colors.reset);
-    
     // Create frequency map
     const frequency = asins.reduce((acc, asin) => {
         acc[asin] = (acc[asin] || 0) + 1;
         return acc;
     }, {});
     
-    // Find duplicates
-    const duplicates = Object.entries(frequency)
-        .filter(([_, count]) => count > 1)
-        .map(([asin, count]) => ({ asin, count }));
-    
-    // Log duplicate information
-    if (duplicates.length > 0) {
-        console.log(colors.yellow + `\nFound duplicates:` + colors.reset);
-        duplicates.forEach(({ asin, count }) => {
-            console.log(colors.yellow + `ASIN ${asin}: appears ${count} times` + colors.reset);
-        });
-    }
-    
     // Get unique ASINs
     const uniqueAsins = Object.keys(frequency).sort();
-    
-    // Log statistics
-    const totalDuplicates = asins.length - uniqueAsins.length;
-    console.log(colors.green + `\nDeduplication complete:` + colors.reset);
-    console.log(colors.green + `- Original count: ${asins.length}` + colors.reset);
-    console.log(colors.green + `- Duplicate entries removed: ${totalDuplicates}` + colors.reset);
-    console.log(colors.green + `- Final unique count: ${uniqueAsins.length}` + colors.reset);
     
     return uniqueAsins;
 }
@@ -719,20 +727,16 @@ async function scrapeStore(storeId) {
         console.log(colors.cyan + '🔍 Scanning main store page...' + colors.reset);
         const response = await axios.get('https://api.rainforestapi.com/request', { params });
         
-        // Collect all ASINs from main page and categories
         let allProducts = [];
         let categoryCount = 0;
         let totalCategories = 0;
 
-        // Add main page products
         if (response.data.store_results) {
             allProducts = allProducts.concat(
                 response.data.store_results.map(item => item.asin)
             );
-            console.log(colors.cyan + `Found ${response.data.store_results.length} products on main page` + colors.reset);
         }
 
-        // Get unique categories (excluding duplicates and special pages)
         if (response.data.categories) {
             const uniqueCategories = new Set();
             response.data.categories.forEach(category => {
@@ -745,48 +749,21 @@ async function scrapeStore(storeId) {
             });
 
             totalCategories = uniqueCategories.size;
-            console.log(colors.cyan + `📂 Found ${totalCategories} categories to scan` + colors.reset);
+            console.log(colors.cyan + `📂 Found ${totalCategories} categories` + colors.reset);
 
-            // Prompt user to continue
-            const continueScanning = await new Promise((resolve) => {
-                rl.question(colors.yellow + `Continue scanning ${totalCategories} categories? (y/n): ` + colors.reset, 
-                    answer => resolve(answer.toLowerCase() === 'y'));
-            });
-
-            if (continueScanning) {
-                // Scan each category
-                for (const categoryUrl of uniqueCategories) {
-                    categoryCount++;
-                    console.log(colors.cyan + `\n📂 Scanning category ${categoryCount}/${totalCategories}...` + colors.reset);
-                    
-                    const categoryProducts = await scrapeStoreCategory(categoryUrl);
-                    allProducts = allProducts.concat(
-                        categoryProducts.map(item => item.asin)
-                    );
-                    
-                    console.log(colors.green + `✅ Category ${categoryCount}/${totalCategories} complete - Found ${categoryProducts.length} products` + colors.reset);
-                    
-                    // Add a small delay between requests
-                    await new Promise(resolve => setTimeout(resolve, 1000));
-                }
+            for (const categoryUrl of uniqueCategories) {
+                categoryCount++;
+                const categoryProducts = await scrapeStoreCategory(categoryUrl);
+                allProducts = allProducts.concat(
+                    categoryProducts.map(item => item.asin)
+                );
+                await new Promise(resolve => setTimeout(resolve, 1000));
             }
         }
 
-        // Deduplicate ASINs
         const uniqueAsins = await deduplicateAsins(allProducts);
-        
-        // Prompt user before proceeding with batch processing
-        const continueBatch = await new Promise((resolve) => {
-            rl.question(colors.yellow + `\nProceed with parent ASIN analysis for ${uniqueAsins.length} products? (y/n): ` + colors.reset, 
-                answer => resolve(answer.toLowerCase() === 'y'));
-        });
-
-        if (continueBatch) {
-            return uniqueAsins.join(',');
-        } else {
-            console.log(colors.cyan + '⏭️ Skipping batch processing' + colors.reset);
-            return '';
-        }
+        // Proceed directly with the ASINs
+        return uniqueAsins.join(',');
 
     } catch (error) {
         console.error(colors.red + 'Error scanning store:', error.message + colors.reset);
@@ -833,54 +810,11 @@ async function mainLoop() {
                 break;
 
             case '3':
-                const input = await new Promise((resolve) => {
-                    rl.question('Enter store ID or ASIN: ', resolve);
+                const analysisAsin = await new Promise((resolve) => {
+                    rl.question('Enter ASIN to analyze variant relationships: ', resolve);
                 });
-                
-                const trimmedInput = input.trim();
-                
-                // Check if input is a store ID or ASIN
-                const isStoreId = /^[0-9A-F]{8}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{4}-[0-9A-F]{12}$/i.test(trimmedInput);
-                const isAsin = /^[A-Z0-9]{10}$/.test(trimmedInput);
-                
-                if (isStoreId) {
-                    // Handle store ID
-                    console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
-                    const storeAsins = await scrapeStore(trimmedInput);
-                    
-                    if (storeAsins) {
-                        console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
-                        await batchProcessByParent(storeAsins);
-                    }
-                } else if (isAsin) {
-                    // Handle ASIN
-                    console.log(colors.cyan + '🔍 Fetching product data...' + colors.reset);
-                    const result = await scrapeAmazon(trimmedInput);
-                    
-                    if (result && result.product && result.product.brand_store) {
-                        const storeId = result.product.brand_store.id;
-                        console.log(colors.green + `✅ Found store ID: ${storeId}` + colors.reset);
-                        
-                        const proceed = await new Promise((resolve) => {
-                            rl.question(colors.yellow + `Proceed with scanning store ${storeId}? (y/n): ` + colors.reset, 
-                                answer => resolve(answer.toLowerCase() === 'y'));
-                        });
-                        
-                        if (proceed) {
-                            console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
-                            const storeAsins = await scrapeStore(storeId);
-                            
-                            if (storeAsins) {
-                                console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
-                                await batchProcessByParent(storeAsins);
-                            }
-                        }
-                    } else {
-                        console.log(colors.red + '❌ Could not find store ID for this ASIN' + colors.reset);
-                    }
-                } else {
-                    console.log(colors.red + '❌ Invalid input. Please enter either a valid store ID or ASIN' + colors.reset);
-                }
+                console.log('Starting variant relationship analysis...');
+                await analyzeVariantRelationships(analysisAsin);
                 break;
 
             case '4':
@@ -897,7 +831,6 @@ async function mainLoop() {
                     const storeAsins = await scrapeStore(trimmedStoreInput);
                     
                     if (storeAsins) {
-                        console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
                         await batchProcessByParent(storeAsins);
                     }
                 } else if (isAsinFormat) {
@@ -908,20 +841,11 @@ async function mainLoop() {
                         const storeId = result.brand_store.id;
                         if (storeId) {
                             console.log(colors.green + `✅ Found store ID: ${storeId}` + colors.reset);
+                            console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
+                            const storeAsins = await scrapeStore(storeId);
                             
-                            const proceed = await new Promise((resolve) => {
-                                rl.question(colors.yellow + `Proceed with scanning store ${storeId}? (y/n): ` + colors.reset, 
-                                    answer => resolve(answer.toLowerCase() === 'y'));
-                            });
-                            
-                            if (proceed) {
-                                console.log(colors.cyan + '🔍 Scanning store...' + colors.reset);
-                                const storeAsins = await scrapeStore(storeId);
-                                
-                                if (storeAsins) {
-                                    console.log(colors.cyan + '🏃 Processing store ASINs...' + colors.reset);
-                                    await batchProcessByParent(storeAsins);
-                                }
+                            if (storeAsins) {
+                                await batchProcessByParent(storeAsins);
                             }
                         } else {
                             console.log(colors.red + '❌ Store ID not found in brand_store object' + colors.reset);
@@ -957,3 +881,19 @@ mainLoop().catch(error => {
 rl.on('close', () => {
     process.exit(0);
 });
+
+// Helper function to determine status of unavailable products
+function determineUnavailableStatus(result) {
+  if (!result) return 'API Error';
+  if (result.error) return result.error;
+  
+  // Add specific checks based on API response structure
+  // This needs to be customized based on actual API response data
+  if (result.product) {
+    if (!result.product.buybox_winner) return 'No Buybox';
+    if (result.product.out_of_stock) return 'Out of Stock';
+    // Add more status checks based on API response
+  }
+  
+  return 'Unknown Status';
+}
