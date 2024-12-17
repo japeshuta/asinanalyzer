@@ -4,6 +4,7 @@ const fs = require('fs');
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const ExcelJS = require('exceljs');
+require('dotenv').config();
 
 // Add color constants at the top of the file
 const colors = {
@@ -102,7 +103,7 @@ async function saveToDatabase(data, requestedAsin) {
 
 async function scrapeAmazon(asin) {
   const params = {
-    api_key: "939D2F2E4B4746AE8E4B6BC407C14238",
+    api_key: process.env.RAINFOREST_API_KEY,
     amazon_domain: "amazon.com",
     asin: asin,
     type: "product"
@@ -511,7 +512,10 @@ async function analyzeVariantRelationships(initialAsin) {
             category: variantResult.product.categories_flat || variantResult.product.search_alias?.title || '',
             title: variantResult.product.title,
             title_excluding_variant_name: variantResult.product.title_excluding_variant_name || variantResult.product.title,
-            type: variant.asin === parentAsin ? 'PARENT' : (isDefaultChild ? 'DEFAULT CHILD' : 'CHILD'),
+            type: determineRelationshipType({
+                asin: variant.asin,
+                title: variantResult.product.title
+            }, parentTitle, parentAsin),
             variationValues: variationValues
           });
         } else {
@@ -543,8 +547,8 @@ async function analyzeVariantRelationships(initialAsin) {
 
   // Convert results to worksheet data
   const worksheetData = [
-      // Header row
-      ['ASIN', 'Parent ASIN', 'Category', 'Title', 'Title Excluding Variant', 'Relationship', ...variationTypeArray]
+      // Modified header row to include Status
+      ['ASIN', 'Parent ASIN', 'Category', 'Title', 'Title Excluding Variant', 'Relationship', 'Status', ...variationTypeArray]
   ];
 
   // Add data rows
@@ -555,7 +559,8 @@ async function analyzeVariantRelationships(initialAsin) {
           result.category,
           result.title,
           result.title_excluding_variant_name,
-          result.type
+          result.type,
+          result.status || 'Active',  // Add status column with default 'Active'
       ];
       
       // Add variation values
@@ -566,14 +571,28 @@ async function analyzeVariantRelationships(initialAsin) {
       worksheetData.push(row);
   });
 
+  // Add unavailable ASINs to the main worksheet data
+  unavailableAsins.forEach(item => {
+      const row = [
+          item.asin,
+          item.parentAsin,
+          '',  // Category
+          item.title,
+          item.title,  // Title excluding variant (same as title for unavailable)
+          'UNAVAILABLE',  // Relationship
+          item.status,  // Status
+          ...variationTypeArray.map(() => '')  // Empty values for variation types
+      ];
+      worksheetData.push(row);
+  });
+
   try {
       // Create workbook and worksheets
       const workbook = new ExcelJS.Workbook();
       const variantSheet = workbook.addWorksheet('Variant Analysis');
       const attributeSheet = workbook.addWorksheet('Attribute Analysis');
-      const unavailableSheet = workbook.addWorksheet('Unavailable ASINs');  // New worksheet
       
-      // First sheet - remains the same
+      // First sheet - add all data including unavailable products
       worksheetData.forEach(row => {
           variantSheet.addRow(row);
       });
@@ -640,28 +659,6 @@ async function analyzeVariantRelationships(initialAsin) {
       headerRow.font = { bold: true };
       headerRow.alignment = { vertical: 'middle', horizontal: 'center', wrapText: true };
       
-      // Add unavailable ASINs sheet
-      unavailableSheet.columns = [
-        { header: 'ASIN', key: 'asin' },
-        { header: 'Parent ASIN', key: 'parentAsin' },
-        { header: 'Title', key: 'title' },
-        { header: 'Status', key: 'status' }
-      ];
-
-      unavailableAsins.forEach(item => {
-        unavailableSheet.addRow(item);
-      });
-
-      // Auto-size columns for unavailable sheet
-      unavailableSheet.columns.forEach(column => {
-        let maxLength = 0;
-        column.eachCell({ includeEmpty: true }, cell => {
-          const columnLength = cell.value ? cell.value.toString().length : 0;
-          maxLength = Math.max(maxLength, columnLength);
-        });
-        column.width = Math.min(Math.max(maxLength + 2, 10), 50);
-      });
-      
       // Save workbook to file
       await workbook.xlsx.writeFile(filename);
       
@@ -678,7 +675,31 @@ async function analyzeVariantRelationships(initialAsin) {
 
 // Helper function to normalize titles
 function normalizeTitle(title) {
-    return (title || '').trim().replace(/\s+/g, ' ').toLowerCase();
+    if (!title) return '';
+    return title.trim().replace(/\s+/g, ' ').toLowerCase();
+}
+
+// Modified comparison logic
+function determineRelationshipType(variant, parentTitle, parentAsin) {
+    // If this is the parent ASIN, it's the PARENT type
+    if (variant.asin === parentAsin) {
+        return 'PARENT';
+    }
+
+    const variantTitle = normalizeTitle(variant.title);
+    const parentTitleNormalized = normalizeTitle(parentTitle);
+    
+    // Debug logging to see what's being compared
+    console.log(`\nComparing titles for ${variant.asin}:
+    Parent:  "${parentTitleNormalized}"
+    Variant: "${variantTitle}"`);
+
+    // Exact match required for DEFAULT CHILD
+    if (variantTitle === parentTitleNormalized) {
+        return 'DEFAULT CHILD';
+    }
+
+    return 'CHILD';
 }
 
 // Add new function to scrape store categories
@@ -686,7 +707,7 @@ async function scrapeStoreCategory(categoryUrl) {
     try {
         const storeId = categoryUrl.split('/page/')[1].split('/')[0];
         const params = {
-            api_key: "939D2F2E4B4746AE8E4B6BC407C14238",
+            api_key: process.env.RAINFOREST_API_KEY,
             amazon_domain: "amazon.com",
             store_id: storeId,
             type: "store"
@@ -717,7 +738,7 @@ async function deduplicateAsins(asins) {
 // Modified store scanning function
 async function scrapeStore(storeId) {
     const params = {
-        api_key: "939D2F2E4B4746AE8E4B6BC407C14238",
+        api_key: process.env.RAINFOREST_API_KEY,
         amazon_domain: "amazon.com",
         store_id: storeId,
         type: "store"
